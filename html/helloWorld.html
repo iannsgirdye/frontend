@@ -22,21 +22,25 @@
         <h2><a href="https://www.youtube.com/watch?v=ny-ouhU-cCc">
           4. HTML заголовки, параграфы и списки — теги h1-h6, p, ol, ul и li
         </a></h2>
-        <p>Это параграф, а ниже — упорядоченный список (<code>ordered list</code>)</p>
-        <ol>
-          <li>Первый пункт</li>
-          <li>Второй пункт</li>
-          <li>Третий пункт</li>
-          <li>Четвёртый пункт</li>
-        </ol>
-        <p>Это снова параграф, а ниже расположен маркированный список (<code>unordered list</code>)</p>
-        <ul>
-          <li>Живи, кайфуй, гуляй, играй.</li>
-          <li>Упал — вставай, наглей, ругай.</li>
-          <li>Чужих роняй, своих спасай.</li>
-          <li>Пельмени, суп, картошка, чай.</li>
-        </ul>
-        <p><i>Примечание.</i> Заголовки разного уровня в этой секции не проставляю, так как это делается на всей странице.</p>
+        <div>
+          <p>Это параграф, а ниже — упорядоченный список (<code>ordered list</code>)</p>
+          <ol>
+            <li>Первый пункт</li>
+            <li>Второй пункт</li>
+            <li>Третий пункт</li>
+            <li>Четвёртый пункт</li>
+          </ol>
+        </div>
+        <div>
+          <p>Это снова параграф, а ниже расположен маркированный список (<code>unordered list</code>)</p>
+          <ul>
+            <li>Живи, кайфуй, гуляй, играй.</li>
+            <li>Упал — вставай, наглей, ругай.</li>
+            <li>Чужих роняй, своих спасай.</li>
+            <li>Пельмени, суп, картошка, чай.</li>
+          </ul>
+        </div>
+        <p><em>Примечание.</em> Заголовки разного уровня в этой секции не проставляю, так как это делается на всей странице.</p>
       </section>
       <hr />
       <section>
@@ -60,11 +64,83 @@
 a = 2
 b = 3
 c = 4
-print(a + b + c)  # 10
+print(a + b + c)  # 9
               </pre>
             </code>
           </div>
         </p>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=scB2C0uNV1s">
+          6. HTML ссылки и кнопки — теги a, button. Якорная ссылка, ссылка mailto и tel. Атрибут target _blank
+        </a></h2>
+        <div>
+          <p><b>Якорное меню</b></p>
+          <ul>
+            <li><a href="#holl">Коридор</a></li>
+            <li><a href="#bathroom">Санузел</a></li>
+            <li><a href="#wardrobe">Гардероб</a></li>
+            <li><a href="#bedroom">Спальня</a></li>
+            <li><a href="#kitchen">Кухня</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 id="holl">Коридор</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div>
+          <h3 id="bathroom">Санузел</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <button type="button">Просто нажми на меня, я ничего не делаю</button>
+        </div>
+        <div>
+          <h3 id="wardrobe">Гардероб</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <button type="button"><b><i><s><u>А тут я переборщила с форматированием</u></s></i></b></button>
+        </div>
+        <div>
+          <h3 id="bedroom">Спальня</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p><b>Заказать кровать:</b> <a href="mailto:bedroom@frontend.ru">bedroom@frontend.ru</a></p>
+        </div>
+        <div>
+          <h3 id="kitchen">Кухня</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p><b>Заказать кухню:</b> <a href="tel:88005553535">8 (800) 555-35-35</a></p>
+        </div>
+        <p><em>Примечание 1.</em> <a href="https://ru.wikipedia.org/wiki/Lorem_ipsum">Подробно про Lorem_ipsum</a></p>
+        <p><em>Примечание 2.</em> <code>target="_blank"</code> использован, например, в подвале.</p>
       </section>
       <hr />
     </main>
