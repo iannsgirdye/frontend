@@ -40,7 +40,7 @@
             <li>Пельмени, суп, картошка, чай.</li>
           </ul>
         </div>
-        <p><em>Примечание.</em> Заголовки разного уровня в этой секции не проставляю, так как это делается на всей странице.</p>
+        <p><em>Примечание. Заголовки разного уровня в этой секции не проставляю, так как это делается на всей странице</em></p>
       </section>
       <hr />
       <section>
@@ -87,7 +87,7 @@ print(a + b + c)  # 9
         </div>
         <div>
           <h3 id="holl">Коридор</h3>
-          <p>
+          <p lang="en">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -97,7 +97,7 @@ print(a + b + c)  # 9
         </div>
         <div>
           <h3 id="bathroom">Санузел</h3>
-          <p>
+          <p lang="en">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -108,7 +108,7 @@ print(a + b + c)  # 9
         </div>
         <div>
           <h3 id="wardrobe">Гардероб</h3>
-          <p>
+          <p lang="en">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -119,7 +119,7 @@ print(a + b + c)  # 9
         </div>
         <div>
           <h3 id="bedroom">Спальня</h3>
-          <p>
+          <p lang="en">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -130,7 +130,7 @@ print(a + b + c)  # 9
         </div>
         <div>
           <h3 id="kitchen">Кухня</h3>
-          <p>
+          <p lang="en">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -139,8 +139,61 @@ print(a + b + c)  # 9
           </p>
           <p><b>Заказать кухню:</b> <a href="tel:88005553535">8 (800) 555-35-35</a></p>
         </div>
-        <p><em>Примечание 1.</em> <a href="https://ru.wikipedia.org/wiki/Lorem_ipsum">Подробно про Lorem_ipsum</a></p>
-        <p><em>Примечание 2.</em> <code>target="_blank"</code> использован, например, в подвале.</p>
+        <p><em>Примечание 1. <a href="https://ru.wikipedia.org/wiki/Lorem_ipsum">Подробно про Lorem_ipsum</a></em></p>
+        <p><em>Примечание 2. <code>target="_blank"</code> использован, например, в подвале</em></p>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=uCXwmupsoMY">
+          7. HTML изображения — тег img. Относительные и абсолютные пути
+        </a></h2>
+        <img 
+          src="/projects/helloWorld/MAI95_logo_blue.png"
+          alt="Синий логотип МАИ к 95-летию"
+          title="Синий логотип МАИ к 95-летию"
+          width="600" height="200"
+          loading="lazy"
+        />
+        <p><em>Примечание. Попробуй навести курсор мыши на изображение :)</em></p>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=nw4ILgX_mLo">
+          8. Цитаты в HTML — теги blockquote, cite. Атрибут cite. Источник цитаты в HTML
+        </a></h2>
+        <div>
+          <h3>Блочная цитата, указание источника через тег <code>cite</code></h3>
+          <blockquote lang="en">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Nisi fugiat excepturi labore dolorem laudantium mollitia aperiam? 
+              Id molestiae reiciendis ducimus? Repudiandae nostrum eum quos iusto sit eius cumque, hic natus.
+            </p>
+          </blockquote>
+          <cite>Emmet Abbreviation</cite>
+        </div>
+        <div>
+          <h3>Блочная цитата, указание источника через атрибут <code>cite</code></h3>
+          <blockquote cite="/" lang="en">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Error quas omnis illum eaque voluptate ipsum, 
+              totam asperiores recusandae repellendus incidunt nam cumque obcaecati? 
+              Repellat tempore voluptate repellendus quis nulla hic?
+            </p>
+          </blockquote>
+        </div>
+        <div>
+          <h3>Строчная цитата, указание источника через атрибут <code>cite</code></h3>
+          <p>
+            Любимая классика:
+            <q cite="/" lang="en">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+              Porro illo nam, sunt commodi veritatis ab libero perspiciatis et non maxime minus similique recusandae! 
+              Aut obcaecati eligendi omnis praesentium officiis reprehenderit?
+            </q>
+          </p>
+        </div>
       </section>
       <hr />
     </main>
