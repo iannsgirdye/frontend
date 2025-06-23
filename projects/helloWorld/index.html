@@ -308,6 +308,184 @@ print(a + b + c)  # 9
         </table>
       </section>
       <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=_in4LAdxAUA">
+          11. HTML формы. Теги form, fieldset, legend, label и поле ввода input
+        </a></h2>
+        <form>
+          <fieldset>
+            <legend>Первая форма</legend>
+            <label for="1.1">Первое поле ввода</label>
+            <input id="1.1" />
+          </fieldset> 
+          <fieldset>
+            <legend>Вторая форма</legend>
+            <label for="2.1">Первое поле ввода</label>
+            <input id="2.1" />
+            <label for="2.2">Второе поле ввода</label>
+            <input id="2.2" />
+          </fieldset>
+          <fieldset>
+            <legend>Третья форма</legend>
+            <div>
+              <label for="3.1">Первое поле ввода</label>
+              <input id="3.1" />
+            </div>
+            <div>
+              <label for="3.2">Второе поле ввода</label>
+              <input id="3.2" value="Как дела?" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=ScPhhvz1z5Q">
+          12. HTML тег input и его вариации. Атрибут type, значения tel, email, password, url, search и другие
+        </a></h2>
+        <form>
+          <fieldset>
+            <legend><b>Поиск</b></legend>
+            <label for="search">Запрос:</label>
+            <input id="search" name="search" type="search"/>
+            <button type="submit">Найти</button>
+          </fieldset>
+        </form>
+        <p></p> <!-- для отступа -->
+        <form>
+          <fieldset>
+            <legend><b>Заполнение профиля</b></legend>
+            <p>
+              <label for="email">Электронная почта:</label>
+              <input id="email" name="email" type="email"/>
+            </p>
+            <p>
+              <label for="tel">Номер телефона:</label>
+              <input id="tel" name="tel" type="tel" />
+            </p>
+            <p>
+              <label for="url">Ссылка на профиль:</label>
+              <input id="url" name="url" type="url" />
+            </p>
+            <p>
+              <label for="age">Возраст:</label>
+              <input id="age" name="age" type="number" />
+            </p>
+            <p>
+              <button type="button">Просто потыкать на кнопку</button>
+              <button type="submit">Отправить данные</button>
+              <button type="reset">Сбросить данные</button>
+            </p>
+          </fieldset>
+        </form>
+        <p></p>
+        <form>
+          <fieldset>
+            <legend><b>Изменение пароля</b></legend>
+            <p>
+              <label for="current-password">Текущий пароль:</label>
+              <input id="current-password" name="current-password" type="password" />
+            </p>
+            <p>
+              <label for="new-password">Новый пароль:</label>
+              <input id="new-password" name="new-password" type="password" />
+            </p>
+            <p>
+              <label for="confirm-password">Повтор нового пароля:</label>
+              <input id="confirm-password" name="confirm-password" type="password" />
+            </p>
+            <p>
+              <button type="submit">Изменить</button>
+            </p>
+          </fieldset>
+        </form>
+        <p></p>
+        <form>
+          <fieldset>
+            <legend><b>Установка даты и времени</b></legend>
+            <p>
+              <label for="date">Дата:</label>
+              <input id="date" name="date" type="date" />
+            </p>
+            <p>
+              <label for="datetime-local">Местные дата и время:</label>
+              <input id="datetime-local" name="datetime-local" type="datetime-local" />
+            </p>
+            <p>
+              <label for="month">Месяц:</label>
+              <input id="month" name="month" type="month" />
+            </p>
+            <p>
+              <label for="week">Неделя:</label>
+              <input id="week" name="week" type="week" />
+            </p>
+            <p>
+              <label for="time">Время:</label>
+              <input id="time" name="time" type="time" />
+            </p>
+            <p>
+              <button type="submit">Сохранить</button>
+            </p>
+          </fieldset>
+        </form>
+        <p></p>
+        <form>
+          <fieldset>
+            <legend><b>Опрос</b></legend>
+            <p>
+              <label for="color">Любимый цвет:</label>
+              <input id="color" name="color" type="color" />
+            </p>
+            <p>
+              <label for="one-file">Любимый мем:</label>
+              <input id="one-file" name="one-file" type="file" />
+            </p>
+            <p>
+              <label for="multiple-file">Любимые обои:</label>
+              <input id="miltiple-file" name="multiple-file" type="file" multiple/>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend><b>Пол</b></legend>
+            <p>
+              <input id="nothing" name="sex" value="nothing" type="radio" checked />
+              <label id="nothing">Не указывать</label>
+              <input id="male" name="sex" value="male" type="radio" />
+              <label for="male">Мужской</label>
+              <input id="female" name="sex" value="female" type="radio" />
+              <label for="female">Женский</label>
+            </p>
+          </fieldset>
+          <p>
+            <button type="submit"><b>Отправить</b></button>
+            <button type="reset"><i>Сбросить</i></button>
+          </p>
+        </form>
+        <p></p>
+        <form>
+          <fieldset>
+            <legend><b>Просто потыкать и потаскать</b></legend>
+            <p>
+              <input id="first-checkbox" name="checkbox" value="first-checkbox" type="checkbox" />
+              <label for="first-checkbox">Первый чекбокс</label>
+              <input id="second-checkbox" name="checkbox" value="second-checkbox" type="checkbox" />
+              <label for="second-checkbox">Второй чекбокс</label>
+              <input id="third-checkbox" name="checkbox" value="third-checkbox" type="checkbox" />
+              <label for="third-checkbox">Третий чекбокс</label>
+              <input id="fourth-checkbox" name="checkbox" value="fourth-checkbox" type="checkbox" checked />
+              <label for="fourth-checkbox">Четвёртый чекбокс</label>
+              <input id="fifth-checkbox" name="checkbox" value="fifth-checkbox" type="checkbox" />
+              <label for="fifth-checkbox">Пятый чекбокс</label>
+            </p>
+            <p>
+              <label for="range">Ползунок</label>
+              <input id="range" name="range" type="range" min="100" max="10000" />
+            </p>
+            <p><button type="submit">Отправить</button></p>
+          </fieldset>
+        </form>
+      </section>
+      <hr />
     </main>
     <footer>
       <p>© <a href="https://github.com/iannsgirdye" target="_blank" lang="en">iannsgirdye</a></p>
