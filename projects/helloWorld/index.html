@@ -196,6 +196,81 @@ print(a + b + c)  # 9
         </div>
       </section>
       <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=6PL2TqBdz0I">
+          9. Медиаконтент в HTML — видео, аудио, фреймы. Теги video, audio, iframe. Тег source
+        </a></h2>
+        <div>
+          <h3>Видео без контроллеров, атрибут <code>src</code></h3>
+          <video 
+            src="/projects/helloWorld/casino.mp4"
+            width="852" height="478"
+          ></video>
+        </div>
+        <div>
+          <h3>Видео с контроллерами, атрибут <code>src</code></h3>
+          <video
+            src="/projects/helloWorld/casino.mp4"
+            width="852" height="478"
+            controls
+          ></video>
+        </div>
+        <div>
+          <h3>
+            Видео с контроллерами, 
+            вложенный тег <code>source</code>, 
+            автопроигрывание без звука,
+            зацикливание воспроизведения
+          </h3>
+          <video 
+            width="852" height="478"
+            controls
+            autoplay muted
+            loop
+          >
+            <source src="/projects/helloWorld/casino.mp4" type="video/mp4"/>
+            <p>Формат mp4 не поддерживается вашим браузером</p>
+          </video>
+        </div>
+        <div>
+          <h3>Аудио с контроллерами и зацикливанием воспроизведения</h3>
+          <audio
+            src="/projects/helloWorld/smeshariki.mp3"
+            controls
+            loop
+          ></audio>
+        </div>
+        <div>
+          <h3>Виджет с <a href="https://stagetimer.io/docs/embed-on-website/">этой страницы</a></h3>
+          <iframe
+            src="https://stagetimer.io/r/DEMO0001/"
+            width="600"
+            height="400"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; screen-wake-lock"
+          ></iframe>
+        </div>
+        <div>
+          <h3>Виджет видео с YouTube-канала Александра Ламкова</h3>
+          <iframe 
+            width="560" height="315" 
+            src="https://www.youtube.com/embed/6PL2TqBdz0I?si=o5WS7j_kf-C1qWpL" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div>
+          <h3>Виджет сайта МАИ</h3>
+          <iframe
+            width="1000" height="500"
+            src="https://mai.ru"
+          ></iframe>
+        </div>
+      </section>
+      <hr />
     </main>
     <footer>
       <p>© <a href="https://github.com/iannsgirdye" target="_blank" lang="en">iannsgirdye</a></p>
