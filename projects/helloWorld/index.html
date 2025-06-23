@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<!--Hello World on HTML-->
 <html lang="ru">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title lang="en">Hello, World!</title>
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header>
@@ -25,7 +27,7 @@
         <div>
           <p>Это параграф, а ниже — упорядоченный список (<code>ordered list</code>)</p>
           <ol>
-            <li>Первый пункт</li>
+            <li class="first-list-item">Первый пункт</li>
             <li>Второй пункт</li>
             <li>Третий пункт</li>
             <li>Четвёртый пункт</li>
@@ -151,7 +153,7 @@ print(a + b + c)  # 9
           7. HTML изображения — тег img. Относительные и абсолютные пути
         </a></h2>
         <img 
-          src="/projects/helloWorld/MAI95_logo_blue.png"
+          src="./MAI95_logo_blue.png"
           alt="Синий логотип МАИ к 95-летию"
           title="Синий логотип МАИ к 95-летию"
           width="600" height="200"
@@ -206,14 +208,14 @@ print(a + b + c)  # 9
         <div>
           <h3>Видео без контроллеров, атрибут <code>src</code></h3>
           <video 
-            src="/projects/helloWorld/casino.mp4"
+            src="./casino.mp4"
             width="852" height="478"
           ></video>
         </div>
         <div>
           <h3>Видео с контроллерами, атрибут <code>src</code></h3>
           <video
-            src="/projects/helloWorld/casino.mp4"
+            src="./casino.mp4"
             width="852" height="478"
             controls
           ></video>
@@ -231,14 +233,14 @@ print(a + b + c)  # 9
             autoplay muted
             loop
           >
-            <source src="/projects/helloWorld/casino.mp4" type="video/mp4"/>
+            <source src="./casino.mp4" type="video/mp4"/>
             <p>Формат mp4 не поддерживается вашим браузером</p>
           </video>
         </div>
         <div>
           <h3>Аудио с контроллерами и зацикливанием воспроизведения</h3>
           <audio
-            src="/projects/helloWorld/smeshariki.mp3"
+            src="./smeshariki.mp3"
             controls
             loop
           ></audio>
@@ -554,7 +556,7 @@ print(a + b + c)  # 9
         </a></h2>
         <div>
           <p><b>Импорт изображения</b></p>
-          <img src="/projects/helloWorld/avatar.svg" width="1080" height="1080" alt="Логотип mai_library">
+          <img src="./avatar.svg" width="1080" height="1080" alt="Логотип mai_library">
         </div>
         <div>
           <p><b>Код изображения</b></p>
