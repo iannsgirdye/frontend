@@ -241,16 +241,6 @@ print(a + b + c)  # 9
           ></audio>
         </div>
         <div>
-          <h3>Виджет с <a href="https://stagetimer.io/docs/embed-on-website/">этой страницы</a></h3>
-          <iframe
-            src="https://stagetimer.io/r/DEMO0001/"
-            width="600"
-            height="400"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; screen-wake-lock"
-          ></iframe>
-        </div>
-        <div>
           <h3>Виджет видео с YouTube-канала Александра Ламкова</h3>
           <iframe 
             width="560" height="315" 
@@ -269,6 +259,53 @@ print(a + b + c)  # 9
             src="https://mai.ru"
           ></iframe>
         </div>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=jWXGLAD2BUU">
+          10. HTML таблицы — теги table, tr, td и th. Структурные табличные теги thead, tbody, tfoot и caption
+        </a></h2>
+        <table>
+          <caption>Экзамен по ЛАиАГ для первого курса ФИИТа</caption>
+          <thead>
+            <tr>
+              <th>Номер группы</th>
+              <th>Фамилия преподавателя</th>
+              <th>Дата и время экзамена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>М80-110БВ-24</td>
+              <td rowspan="2">Руденко</td>
+              <td>01.06.2025 09:00</td>
+            </tr>
+            <tr>
+              <td>М80-111БВ-24</td>
+              <td>01.06.2025 13:00</td>
+            </tr>
+            <tr>
+              <td>М80-112БВ-24</td>
+              <td rowspan="4">Пегачкова</td>
+              <td>02.05.2025 18:00</td>
+            </tr>
+            <tr>
+              <td>М80-113БВ-24</td>
+              <td rowspan="3">02.06.2025 12:15</td>
+            </tr>
+            <tr>
+              <td>М80-114БВ-24</td>
+            </tr>
+            <tr>
+              <td>М80-116БВ-24</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Итог: готовтесь, товарищи!</td>
+            </tr>
+          </tfoot>
+        </table>
       </section>
       <hr />
     </main>
