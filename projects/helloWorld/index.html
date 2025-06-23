@@ -486,6 +486,39 @@ print(a + b + c)  # 9
         </form>
       </section>
       <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=FMjuLXNTPfU">
+          13. Формы в HTML. Теги textarea, select, option, optgroup
+        </a></h2>
+        <form>
+          <fieldset>
+            <p>
+              <label for="hello-world">Введите приветственное сообщение:<br /></label>
+              <textarea id="hello-world" name="hello-world">Hello, World!</textarea>
+            </p>
+            <p>
+              <label for="city">Выберите город:</label>
+              <select id="city" name="city" required>
+                <option value="" disabled selected>Не выбран</option>
+                <optgroup label="Центр">
+                  <option value="moscow">Москва</option>
+                  <option value="pskov">Псков</option>
+                  <option value="yaroslavl">Ярославль</option>
+                </optgroup>
+                <optgroup label="Сибирь">
+                  <option value="omsk">Омск</option>
+                  <option value="novosibirsk">Новосибирск</option>
+                </optgroup>
+              </select>
+              <p>
+                <button type="submit">Подтвердить</button>
+                <button type="reset">Сбросить</button>
+              </p>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+      <hr />
     </main>
     <footer>
       <p>© <a href="https://github.com/iannsgirdye" target="_blank" lang="en">iannsgirdye</a></p>
