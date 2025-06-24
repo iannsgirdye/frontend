@@ -94,11 +94,35 @@ h3 {
 }
 
 .margin-0 {
-  margin: 0;
+  margin: 0px;
 }
 
 .color-currentColor {
   width: 300px;
   color: rgb(50 50 50 / 0.8);
   border: 5px solid currentColor;
+}
+
+
+/*********************************************************************************************/
+/* 8. CSS фоновый цвет, изображение, градиент — свойство background, функция linear-gradient */
+/*********************************************************************************************/
+
+.box-81 {
+  background-color: rgb(80 80 80 / 0.9);
+  width: 100px;
+}
+
+.box-82 {
+  background-image: url("./content/space.png");
+  width: 250px;
+  height: 250px;
+}
+
+.box-83 {
+  background-image: linear-gradient(#FF0000, #00FF00, #0000FF);
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
