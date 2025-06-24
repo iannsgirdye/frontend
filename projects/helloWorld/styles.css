@@ -62,12 +62,43 @@ h1 {
   font-display: swap;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 h1,
 h2, 
 h3 {
-  font-family: "Roboto", sanf-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-p {
-  font-family: sans-serif;
+
+/***************************************************************************************************/
+/* 7. Цвета в CSS. Форматы RGB, HEX, HSL. Свойство color, ключевые слова transparent, currentColor */
+/***************************************************************************************************/
+
+.color-red {
+  color: red;
+}
+
+.color-transparent {
+  color: transparent;
+}
+
+.color-rgb-0-255-0 {
+  color: rgb(0 255 0);
+}
+
+.color-0095DA {
+  color: #0095DA;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.color-currentColor {
+  width: 300px;
+  color: rgb(50 50 50 / 0.8);
+  border: 5px solid currentColor;
 }
