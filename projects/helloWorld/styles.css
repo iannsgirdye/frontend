@@ -126,3 +126,37 @@ h3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+
+/*************************************************************************/
+/* 9. CSS рамка border, обводка outline, тени box-shadow, фильтры filter */
+/*************************************************************************/
+
+.box-91 {
+  width: 300px;
+  box-sizing: border-box;
+  color: white;
+  margin: 40px;
+  padding: 10px;
+  background-color: rgb(28, 52, 115);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 40px;
+  border-right-width: 10px;
+  border-right-color: aqua;
+  border-right-style: dotted;
+  border-bottom-width: 5px;
+  border-bottom-color: rgb(31, 133, 74);
+  border-bottom-style: solid;
+  outline-width: 20px;
+  outline-style: dashed;
+  outline-color: green;
+}
+
+.box-92 {
+  width: 400px;
+  height: 400px;
+  margin: 100px;
+  background-color: #0095DA;
+  border: 5px #6334c2 solid;
+  box-shadow: 10px 20px 4px rgb(0 0 40 / 0.9);
+}
