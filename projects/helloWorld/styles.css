@@ -224,3 +224,58 @@ h3 {
   position: relative;
   z-index: 100;  
 }
+
+
+/*********************************************************************************************/
+/* 11. Единицы измерения в CSS — px, %, em, rem, vw, vh. Относительные и абсолютные величины */
+/*********************************************************************************************/
+
+.box-11-px {
+  background-color: lightblue;
+  width: 200px;
+  color: black;
+  font-size: 20px;
+}
+
+.box-11-persent-parent {
+  background-color: yellowgreen;
+  width: 70%;
+  color: grey;
+  font-size: 30px;
+}
+
+.box-11-persent-child {
+  background-color: grey;
+  width: 50%;
+  color: yellowgreen;
+  font-size: 15px;
+}
+
+.box-11-em-parent {
+  background-color: lightseagreen;
+  width: 10em;
+  color: #6334c2;
+}
+
+.box-11-em-child-1 {
+  background-color: lightcoral;
+  width: 5em;
+  font-size: 20px;
+  color: white;
+}
+
+.box-11-em-child-2 {
+  background-color: lightskyblue;
+  width: 1em;
+  color: black;
+}
+
+.box-11-viewport {
+  background-image: linear-gradient(rgb(12 34 56 / 0.5), rgb(65 43 21 / 0.75));
+  width: 40vw;
+  /* height: 70vh; */
+  color: white;
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 20px;
+}
