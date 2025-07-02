@@ -830,6 +830,76 @@ border: 5px solid currentColor
         </div>
       </section>
       <hr/> <!-- <element/> vs <element /> -->
+      <section>
+        <h2><a href="https://youtu.be/p0Hb2RtISOU?si=J3HVqWlfTLenj1Zk">
+          16. CSS переполнение overflow, видимость opacity и visibility, обрезка clip-path
+        </a></h2>
+        <article class="css16-visibility">
+          <h3>Свойство <code>visibility</code></h3>
+          <div class="css16-visibility-container">
+            <p>Кнопки с <code>type="submit"</code></p>
+            <div class="css16-visibility-box">
+              <p><code>visible</code></p>
+              <button type="submit" class="css16-button1">Текст внутри кнопки</button>
+            </div>
+            <div class="css16-visibility-box">
+              <p><code>hidden</code></p>
+              <button type="submit" class="css16-button2">Текст внутри кнопки</button>
+            </div>
+          </div>
+        </article>
+        <article class="css16-overflow">
+          <h3>Свойство <code>overflow</code></h3>
+          <div class="css16-overflow-container">
+            <div class="css16-overflow-box">
+              <p><code>visible</code></p>
+              <div class="css16-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo dolorum praesentium perferendis obcaecati. Sed voluptate similique delectus perspiciatis veniam porro, rem ut impedit ipsa temporibus accusamus. Impedit, quaerat accusantium.</div>
+            </div>
+            <div class="css16-overflow-box">
+              <p><code>auto</code></p>
+              <div class="css16-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo dolorum praesentium perferendis obcaecati. Sed voluptate similique delectus perspiciatis veniam porro, rem ut impedit ipsa temporibus accusamus. Impedit, quaerat accusantium.</div>
+            </div>
+            <div class="css16-overflow-box">
+              <p><code>scroll</code></p>
+              <div class="css16-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo dolorum praesentium perferendis obcaecati. Sed voluptate similique delectus perspiciatis veniam porro, rem ut impedit ipsa temporibus accusamus. Impedit, quaerat accusantium.</div>
+            </div>
+            <div class="css16-overflow-box">
+              <p><code>hidden</code></p>
+              <div class="css16-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo dolorum praesentium perferendis obcaecati. Sed voluptate similique delectus perspiciatis veniam porro, rem ut impedit ipsa temporibus accusamus. Impedit, quaerat accusantium.</div>
+            </div>
+            <div class="css16-overflow-box">
+              <p><code>clip</code></p>
+              <div class="css16-clip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo dolorum praesentium perferendis obcaecati. Sed voluptate similique delectus perspiciatis veniam porro, rem ut impedit ipsa temporibus accusamus. Impedit, quaerat accusantium.</div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Свойство <code>opacity</code></h3>
+          <div class="css16-opacity-container">
+            <div class="css16-opacity-box-border">
+              <div class="css16-opacity-box opacity-1">
+                <code>1</code>
+              </div>
+            </div>
+            <div class="css16-opacity-box-border">
+              <div class="css16-opacity-box opacity-075">
+                <code>0.75</code>
+              </div>
+            </div>
+            <div class="css16-opacity-box-border">
+              <div class="css16-opacity-box opacity-025">
+                <code>0.25</code>
+              </div>
+            </div>
+            <div class="css16-opacity-box-border">
+              <div class="css16-opacity-box opacity-0">
+                <code>0</code>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <hr/>
     </main>
     <footer>
       <p>© <a href="https://github.com/iannsgirdye" target="_blank" lang="en">iannsgirdye</a></p>

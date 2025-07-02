@@ -527,3 +527,126 @@ h3 {
 .css15-auditorium-description {
   font-style: italic;
 }
+
+
+/************************************************************************************/
+/* 16. CSS переполнение overflow, видимость opacity и visibility, обрезка clip-path */
+/************************************************************************************/
+
+.css16-visibility h3 {
+  text-align: center;
+}
+
+.css16-visibility-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  border: 5px dotted darkgrey;
+  padding: 20px;
+}
+
+.css16-visibility-box {
+  padding: 20px;
+  border-color: gold;
+  border-width: 3px;
+  border-style: dashed;
+  border-radius: 10px;
+  background-color: lightgoldenrodyellow;
+  display: grid;
+  grid-column: auto;
+  row-gap: 20px;
+}
+
+.css16-button1 {
+  visibility: visible;
+}
+
+.css16-button2 {
+  visibility: hidden;
+}
+
+.css16-overflow-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 5px dotted darkgrey;
+  padding: 20px 20px 100px 20px;
+}
+
+.css16-overflow-box {
+  background-color: lightseagreen;
+  border: 3px dashed seagreen;
+  display: grid;
+  grid-column: auto;
+  row-gap: 20px;
+  padding: 20px;
+  margin: 5px;
+}
+
+.css16-overflow-box p {
+  color: white;
+  margin: 0px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.css16-overflow-box div {
+  border: 2px solid lightcoral;
+  padding: 20px;
+  background-color: lightcyan;
+  height: 100px;
+}
+
+.css16-overflow-box .css16-visible {
+  overflow: visible;
+}
+
+.css16-overflow-box .css16-auto {
+  overflow: auto;
+}
+
+.css16-overflow-box .css16-scroll {
+  overflow: scroll;
+}
+
+.css16-overflow-box .css16-hidden {
+  overflow: hidden;
+}
+
+.css16-overflow-box .css16-clip {
+  overflow: clip;
+}
+
+.css16-opacity-container {
+  display: flex;
+  justify-content: center;
+  border: 5px dotted darkgrey;
+  padding: 40px;
+  column-gap: 20px;
+}
+
+.css16-opacity-box-border {
+  border: 3px dashed darkorange;
+}
+
+.css16-opacity-box {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.css16-opacity-box.opacity-1 {
+  opacity: 1;
+}
+
+.css16-opacity-box.opacity-075 {
+  opacity: 0.75;
+}
+
+.css16-opacity-box.opacity-025 {
+  opacity: 0.25;
+}
+
+.css16-opacity-box.opacity-0 {
+  opacity: 0;
+}
