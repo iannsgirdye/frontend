@@ -781,7 +781,6 @@ html {
 
 .css18-box1-border {
   width: 20vw;
-  height: 20vh;
   border: 2px solid black;
   margin: 20px 0px 100px 20px;
 }
@@ -790,15 +789,18 @@ html {
   padding: 20px;
   background-color: blanchedalmond;
   transform: translate(30px, 5%); /* аналогично translateX(30px) translateY(5%) */
+  transition-duration: 1s;
 }
 
 .css18-box2 {
   width: 30vw;
   background-color: lightcoral;
   padding: 20px;
+  margin-left: 30px;
   margin-top: 200px;
   transform: scaleX(1.25) scaleY(1.75);
   rotate: 358deg;
+  transition: all 0.5s ease-in 0.5s;
 }
 
 .css18-box3 {
@@ -807,6 +809,7 @@ html {
   transform: scale(-1, -1) rotate(45deg);
   padding: 40px;
   margin: 250px;
+  transition-duration: 5s;
 }
 
 .css18-box4 {
@@ -815,4 +818,23 @@ html {
   padding: 5px;
   margin-left: 100px;
   transform: skew(325deg, 10deg);
+  transition: all 0s ease-out 2s;
+}
+
+.css18-box1:hover {
+  transform: translate(0px, 0%)
+}
+
+.css18-box2:hover {
+  transform: scale(1, 1);
+}
+
+.css18-box3:hover {
+  font-size: 8px;
+  background-color: black;
+  color: white;
+}
+
+.css18-box4:hover {
+  transform: skew(0deg);
 }
