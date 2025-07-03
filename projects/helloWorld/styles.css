@@ -703,3 +703,46 @@ html {
   justify-content: center;
   align-items: center;
 }
+
+
+/******************************************************************************************************/
+/* 18. CSS переходы состояний transition, трансформации transform. Свойства translate, scale и rotate */
+/******************************************************************************************************/
+
+.css18-box1-border {
+  width: 20vw;
+  height: 20vh;
+  border: 2px solid black;
+  margin: 20px 0px 100px 20px;
+}
+
+.css18-box1 {
+  padding: 20px;
+  background-color: blanchedalmond;
+  transform: translate(30px, 5%); /* аналогично translateX(30px) translateY(5%) */
+}
+
+.css18-box2 {
+  width: 30vw;
+  background-color: lightcoral;
+  padding: 20px;
+  margin-top: 200px;
+  transform: scaleX(1.25) scaleY(1.75);
+  rotate: 358deg;
+}
+
+.css18-box3 {
+  width: 10vw;
+  background-color: lightseagreen;
+  transform: scale(-1, -1) rotate(45deg);
+  padding: 40px;
+  margin: 250px;
+}
+
+.css18-box4 {
+  width: 15vw;
+  background-color: lightgreen;
+  padding: 5px;
+  margin-left: 100px;
+  transform: skew(325deg, 10deg);
+}
