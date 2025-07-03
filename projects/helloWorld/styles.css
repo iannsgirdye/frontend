@@ -650,3 +650,56 @@ h3 {
 .css16-opacity-box.opacity-0 {
   opacity: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.css17-container {
+  display: flex;
+  border: 5px double darkorchid;
+  justify-content: space-between;
+  column-gap: 10px;
+  padding: 20px;
+  margin-bottom: 300px;
+  background-color: lightgray
+}
+
+.css17-container div {
+  background-color: orchid;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 20px;
+  width: 20%;
+}
+
+.css17-container textarea {
+  background-color: orchid;
+  width: 20%;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+  padding: 20px;
+}
+
+.css17-resize-both {
+  resize: both;
+  overflow: auto;
+}
+
+.css17-resize-vertical {
+  resize: vertical;
+}
+
+.viktor-box {
+  background-color: yellow;
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  padding: 0.25em;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
