@@ -1,15 +1,29 @@
 /********************************************************************************************************/
 /* 20. Адаптивная верстка в CSS. Desktop и mobile first. Медиазапросы @media. Свойства min-max размеров */
+/* CSS Переменные | CSS Variables | функция var()                                                       */
 /********************************************************************************************************/
+
+:root {
+  --default-margin: 20px;
+  
+  --default-alignment: center;
+
+  --icon-container-background-color: lightgray;
+
+  --font-size-4: 36px;
+  --font-size-3: 32px;
+  --font-size-2: 28px;
+  --font-size-1: 24px;
+}
 
 html {
   font-family: sans-serif;
 }
 
 h1 {
-  text-align: center;
-  font-size: 36px;
-  margin: 20px;
+  text-align: var(--default-alignment);
+  font-size: var(--font-size-4);
+  margin: var(--default-margin);
 }
 
 .div1 {
@@ -23,18 +37,18 @@ h1 {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
+  justify-content: var(--default-alignment, center);
+  justify-items: var(--default-alignment, center);
+  align-items: var(--default-alignment, center);
   gap: 20px;
-  margin: 20px;
+  margin: var(--default-margin);
   padding: 20px;
 }
 
 .icon-container {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: lightgray;
+  background-color: var(--icon-container-background-color);
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
@@ -47,7 +61,7 @@ h1 {
 }
 
 .icon-container h2 {
-  text-align: center;
+  text-align: var(--default-alignment);
   font-size: 20px;
   margin: 10px 0 0 0;
   width: 200px;
@@ -61,19 +75,19 @@ h1 {
 
 @media (max-width: 719px) {
   h1 {
-    font-size: 32px;
+    font-size: var(--font-size-3);
   }
 }
 
 @media (max-width: 639px) {
   h1 {
-    font-size: 28px;
+    font-size: var(--font-size-2);
   }
 }
 
 @media (max-width: 569px) {
   h1 {
-    font-size: 24px;
+    font-size: var(--font-size-1);
   }
 
   .container {
@@ -81,4 +95,5 @@ h1 {
   }
 }
 
-/* Примечание. Не адаптированы icon-containers и h1 при маленьких размерах, это просто небольшая практика */
+/* Примечание 1. Не адаптированы icon-containers и h1 при маленьких размерах, это просто небольшая практика 
+   Примечание 2. О целесообразности замены значений свойств на переменные речи не идёт                      */
