@@ -838,3 +838,76 @@ html {
 .css18-box4:hover {
   transform: skew(0deg);
 }
+
+
+/**********************************************************************************/
+/* 19. Анимации в CSS. Правило @keyframes. Свойство animation. Настройка анимаций */
+/**********************************************************************************/
+
+.css19-header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.css19-downloading-border {
+  margin: 20px;
+  border: 5px solid #000000;
+}
+
+@keyframes css19-downloading {
+  100% {
+    width: 100%;
+  }
+}
+
+.css19-downloading-element {
+  animation-name: css19-downloading;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: #0095DA;
+  height: 100px;
+  width: 0px;
+}
+
+@keyframes css19-crazy {
+  20% {
+    transform: skew(20deg) rotate(45deg);
+    background-color: black;
+  }
+
+  40% {
+    transform: skew(26deg, 13deg) rotate(0deg) scale(1.5);
+    background-color: darkolivegreen;
+    border-radius: 10px;
+  }
+
+  60% {
+    transform: skewY(deg) rotate(138deg) scaleY(2.4);
+    background-color: lightseagreen;
+    border-radius: 30px;
+  }
+
+  80%, 100% {
+    transform: skew(0deg) rotate(0deg) scale(1);
+    background-color: #0095DA;
+    border-radius: 0px;
+  }
+}
+
+.css19-crazy-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.css19-crazy {
+  animation-name: css19-crazy;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: #0095DA;
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+}
