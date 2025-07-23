@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How are you, World?</title>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Как дела, мир?</h1>
+    <p class="header__description">
+      Продолжение <span lang="en"><b>Hello, World!</b></span> после просмотра
+      <a href="https://dzen.ru/video/watch/66af94151d30f961a1f744c8?sid=16212504654399129" class="link">
+        видео по продвинутой работе с изображениями
+      </a>
+    </p>
+  </header>
+  <main>
+    <section class="section">
+      <h2 class="section__title" hidden>Адаптируемый под пиксели jpeg</h2>
+      <blockquote class="blockquote">
+        <p>Изображение, которое адаптируется к плотности экрана.</p>
+        <cite>iannsgirdye</cite>
+      </blockquote>
+      <img
+        src="./images/caulikids.jpg"
+        srcset="
+          ./images/caulikids_2x.jpg 2x,
+          ./images/caulikids_3x.jpg 3x
+        "
+        alt="Мармеладки, наверное"
+        width="670" height="381"
+        loading="lazy"
+        class="image"
+      />
+    </section>
+    <section class="section">
+      <h2 class="section__title" hidden>Адаптируемые под пиксели avif, webp, jpeg</h2>
+      <figure class="figure">
+        <picture>
+          <source 
+            srcset="
+              ./images/caulikids.avif    1x,
+              ./images/caulikids_2x.avif 2x,
+              ./images/caulikids_3x.avif 3x
+            "
+            type="image/avif"
+          />
+          <source 
+            srcset="
+              ./images/caulikids.webp    1x,
+              ./images/caulikids_2x.webp 2x,
+              ./images/caulikids_3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <img 
+            src="./images/caulikids.jpg"
+            srcset="
+              ./images/caulikids_2x.jpg 2x,
+              ./images/caulikids_3x.jpg 3x
+            "
+            alt="Мармеладки, наверное"
+            width="670" height="381"
+            loading="lazy"
+            class="image"
+          />
+        </picture>
+        <figcaption class="figcaption">Это <code>&lt;figcaption&gt;</code>, а выше располено то же самое изображение</figcaption>
+      </figure>
+    </section>
+    <section class="section">
+      <h2 class="section__header" hidden>avif, webp, jpeg на фоне</h2>
+      <div class="card">
+        <div class="card__content">
+          <h3 class="card__title">Просто карточка</h3>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse, dicta provident distinctio quibusdam eius quam saepe pariatur itaque vel voluptate porro deleniti iure totam cum sit consectetur quas explicabo.</p>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse, dicta provident distinctio quibusdam eius quam saepe pariatur itaque vel voluptate porro deleniti iure totam cum sit consectetur quas explicabo.</p>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse, dicta provident distinctio quibusdam eius quam saepe pariatur itaque vel voluptate porro deleniti iure totam cum sit consectetur quas explicabo.</p>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse, dicta provident distinctio quibusdam eius quam saepe pariatur itaque vel voluptate porro deleniti iure totam cum sit consectetur quas explicabo.</p>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse, dicta provident distinctio quibusdam eius quam saepe pariatur itaque vel voluptate porro deleniti iure totam cum sit consectetur quas explicabo.</p>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse, dicta provident distinctio quibusdam eius quam saepe pariatur itaque vel voluptate porro deleniti iure totam cum sit consectetur quas explicabo.</p>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse, dicta provident distinctio quibusdam eius quam saepe pariatur itaque vel voluptate porro deleniti iure totam cum sit consectetur quas explicabo.</p>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse, dicta provident distinctio quibusdam eius quam saepe pariatur itaque vel voluptate porro deleniti iure totam cum sit consectetur quas explicabo.</p>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse, dicta provident distinctio quibusdam eius quam saepe pariatur itaque vel voluptate porro deleniti iure totam cum sit consectetur quas explicabo.</p>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse, dicta provident distinctio quibusdam eius quam saepe pariatur itaque vel voluptate porro deleniti iure totam cum sit consectetur quas explicabo.</p>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse, dicta provident distinctio quibusdam eius quam saepe pariatur itaque vel voluptate porro deleniti iure totam cum sit consectetur quas explicabo.</p>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse, dicta provident distinctio quibusdam eius quam saepe pariatur itaque vel voluptate porro deleniti iure totam cum sit consectetur quas explicabo.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

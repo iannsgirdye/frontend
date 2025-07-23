@@ -1,0 +1,77 @@
+html {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 7
+  00;
+}
+
+.blockquote {
+  margin: 1rem;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-block: 2rem;
+  border-bottom: 2px solid #999999;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.figure {
+  margin: 0;
+}
+
+.figcaption {
+  padding-top: 0.5rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.card__content {
+  background-image: image-set(
+    url("./images/caulikids_3x.avif") type("image/avif"),
+    url("./images/caulikids_3x.webp") type("image/webp"),
+    url("./images/caulikids_3x.jpg") type("image/jpg")
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  font-weight: 700;
+  max-width: 80vw;
+}
+
+.card__title {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
