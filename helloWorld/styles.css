@@ -1,0 +1,968 @@
+:root {
+  --color-mai: #0095da;
+}
+
+
+/*********************************************************************************/
+/* 2. Гайд по CSS-селекторам, расчёт специфичности в CSS. Приоритет и вес стилей */
+/*********************************************************************************/
+
+/* Селектор по тегу */
+h1 {
+  color: yellowgreen;
+}
+
+/* Селектор по классу */
+.first-list-item {
+  color: brown;
+}
+
+/* Селектор по атрибуту */
+[type="text"] {
+  color: blue;
+}
+
+/* Селектор по атрибуту с вхождением в него подстроки */
+[href*="youtube"] {
+  color: green;
+}
+
+
+/***************************************************************************************************/
+/* 3. Блочная модель в CSS — свойства display, width, height, padding, margin, border и box-sizing */
+/* 4. CSS внутренние и внешние отступы — свойства padding и margin. Схлопывание отступов           */
+/***************************************************************************************************/
+
+.box-1 {
+  background-color: yellow;
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+  margin: 10px 20px 30px 40px;
+  border: 10px solid red;
+  box-sizing: border-box;
+}
+
+.box-2 {
+  background-color: green;
+  width: 200px;
+  height: 300px;
+  padding-left: 40px;
+  padding-bottom: 25px;
+  margin-right: 35px;
+  margin-top: 10px;
+  border: 5px dashed blue
+}
+
+
+/********************************************************************************************/
+/* 6. CSS шрифты — способы подключения, правило font-face, свойство font и другие параметры */
+/********************************************************************************************/
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./styles/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1,
+h2, 
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+
+/***************************************************************************************************/
+/* 7. Цвета в CSS. Форматы RGB, HEX, HSL. Свойство color, ключевые слова transparent, currentColor */
+/***************************************************************************************************/
+
+.color-red {
+  color: red;
+}
+
+.color-transparent {
+  color: transparent;
+}
+
+.color-rgb-0-255-0 {
+  color: rgb(0 255 0);
+}
+
+.color-0095DA {
+  color: var(--color-mai);
+}
+
+.margin-padding-0 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.color-currentColor {
+  width: 300px;
+  color: rgb(50 50 50 / 0.8);
+  border: 5px solid currentColor;
+}
+
+
+/*********************************************************************************************/
+/* 8. CSS фоновый цвет, изображение, градиент — свойство background, функция linear-gradient */
+/*********************************************************************************************/
+
+.box-81 {
+  background-color: rgb(80 80 80 / 0.9);
+  width: 100px;
+}
+
+.box-82 {
+  background-image: url("./content/space.png");
+  width: 250px;
+  height: 250px;
+}
+
+.box-83 {
+  background-image: linear-gradient(#FF0000, #00FF00, #0000FF);
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*************************************************************************/
+/* 9. CSS рамка border, обводка outline, тени box-shadow, фильтры filter */
+/*************************************************************************/
+
+.box-91 {
+  width: 300px;
+  box-sizing: border-box;
+  color: white;
+  margin: 40px;
+  padding: 10px;
+  background-color: rgb(28, 52, 115);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 40px;
+  border-right-width: 10px;
+  border-right-color: aqua;
+  border-right-style: dotted;
+  border-bottom-width: 5px;
+  border-bottom-color: rgb(31, 133, 74);
+  border-bottom-style: solid;
+  outline-width: 20px;
+  outline-style: dashed;
+  outline-color: green;
+}
+
+.box-92 {
+  width: 400px;
+  height: 400px;
+  margin: 100px;
+  background-color: var(--color-mai);
+  border: 5px #6334c2 solid;
+  box-shadow: 10px 20px 4px rgb(0 0 40 / 0.9);
+}
+
+
+/*******************************************************************************************************/
+/* 10. CSS позиционирование — свойства position, top, right, bottom, left, z-index. Контекст наложения */
+/*******************************************************************************************************/
+
+.box-10-1 {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  box-sizing: border-box;
+  width: 256px;
+  height: 256px;
+  padding: 10px;
+  background-color: yellow;
+  background-image: url("./content/space.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 300px;
+  left: 300px;
+}
+
+.box-10-2 {
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  box-sizing: border-box;
+  width: 450px;
+  height: 450px;
+  padding: 25px;
+  background-image: radial-gradient(rgb(50 100 150), rgb(150 200 250));
+  position: absolute;
+  top: 220px;
+  left: 220px;
+  box-shadow: 10px 10px 5px #2c1080;
+}
+
+.box-10-3 {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 20px;
+  box-sizing: border-box;
+  width: 324px;
+  height: 648px;
+  padding: 30px;
+  background-color: rgb(30 60 90 / 0.6);
+  position: sticky;
+}
+
+.box-10-4 {
+  color: #00FF00;
+  font-family: monospace;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-left: 300px;
+  width: 256px;
+  height: 128px;
+  padding: 10px 20px 30px 40px;
+  background-image: linear-gradient(#000000, #CCCCCC);
+  position: relative;
+  z-index: 100;  
+}
+
+
+/*********************************************************************************************/
+/* 11. Единицы измерения в CSS — px, %, em, rem, vw, vh. Относительные и абсолютные величины */
+/*********************************************************************************************/
+
+.box-11-px {
+  background-color: lightblue;
+  width: 200px;
+  color: black;
+  font-size: 20px;
+}
+
+.box-11-persent-parent {
+  background-color: yellowgreen;
+  width: 70%;
+  color: grey;
+  font-size: 30px;
+}
+
+.box-11-persent-child {
+  background-color: grey;
+  width: 50%;
+  color: yellowgreen;
+  font-size: 15px;
+}
+
+.box-11-em-parent {
+  background-color: lightseagreen;
+  width: 10em;
+  color: #6334c2;
+}
+
+.box-11-em-child-1 {
+  background-color: lightcoral;
+  width: 5em;
+  font-size: 20px;
+  color: white;
+}
+
+.box-11-em-child-2 {
+  background-color: lightskyblue;
+  width: 1em;
+  color: black;
+}
+
+.box-11-viewport {
+  background-image: linear-gradient(rgb(12 34 56 / 0.5), rgb(65 43 21 / 0.75));
+  width: 40vw;
+  /* height: 70vh; */
+  color: white;
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 20px;
+}
+
+
+/***********************************************************/
+/* 12. CSS Flexbox Layout. Флексы в CSS. Гайд по флексбокс */
+/***********************************************************/
+
+.test-box-1 {
+  display: inline-block;
+  background-color: aqua;
+  width: 500px;
+  height: 500px;
+}
+
+.flex-container-18-1 {
+  display: flex;
+  background-color: #ab4444; 
+  margin-block: 20px;
+  padding: 20px;
+  column-gap: 20px;
+}
+
+.flex-element-18-1 {
+  color: whitesmoke;
+  font-weight: 600;
+  background-color: var(--color-mai);
+  padding: 10px;
+}
+
+.flex-container-18-2 {
+  display: flex;
+  background-color: cyan;
+  margin: 2rem;
+  padding: 40px;
+  flex-direction: row-reverse;
+}
+
+.flex-element-18-2 {
+  color: lightgrey;
+  background-color: lightseagreen;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.flex-container-18-3 {
+  display: flex;
+  background-color: lightblue;
+  margin: 20px;
+  padding: 20px;
+  border: 4px solid darkblue;
+  gap: 30px;
+  width: 600px;
+  flex-wrap: wrap;
+  align-items: start;
+  /* flex-direction: column-reverse; */
+  /* box-sizing: border-box; */
+}
+
+.flex-element-18-3 {
+  background-color: lightgreen;
+  color: black;
+  font-weight: 900;
+  padding: 5px;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: darkgreen;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-content-start {
+  align-content: start;
+}
+
+.align-content-end {
+  align-content: end;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.align-content-space-between {
+  align-content: space-between;
+}
+
+.align-content-space-around {
+  align-content: space-around;
+}
+
+.align-content-space-evenly {
+  align-content: space-evenly;
+}
+
+.height-300px {
+  height: 300px;
+}
+
+
+/********************************************************************************************************/
+/* 14. CSS псевдоклассы — child, not. Состояния hover, focus и focus-visible, active, disabled, checked */
+/********************************************************************************************************/
+
+.css14-container-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 20px;
+}
+
+.css14-container-buttons button {
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.css14-button1 {
+  background-color: lightcoral;
+}
+
+.css14-button1:hover {
+  background-color: coral;
+}
+
+.css14-button2 {
+  background-color: lightpink;
+}
+
+.css14-button2:focus {
+  box-shadow: 6px 3px 1px pink;
+}
+
+.css14-button3 {
+  background-color: lightseagreen;
+}
+
+.css14-button3:focus-visible {
+  box-shadow: 6px 3px 1px seagreen;
+}
+
+.css14-button4 {
+  background-color: lightgreen;
+}
+
+.css14-button4:active {
+  background-color: green;
+  color: white;
+}
+
+.css14-container-inputs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.css14-input1:disabled {
+  background-color: lightskyblue;
+  border: 1px dashed blue; 
+  padding: 5px;
+}
+
+/* .css14-input2:checked {
+   
+} */
+
+
+/*********************************************************/
+/* 15. CSS Grid Layout. Грид-сетка. Гайд по гридам в CSS */
+/*********************************************************/
+
+.grid-container-100 {
+  display: grid;
+  grid-template-columns: 
+    [one] 200px [two] 200px [three] auto [four] auto [five];
+  grid-template-rows:
+    [odin] 150px [dva] 1fr [tri] auto [chetiri];
+}
+/* значение размера колонки, заданного fr в правиле выше не работает, 
+   так как у контейнера явно не задана высота */
+
+.grid-element-100 {
+  background-color: lightyellow;
+  color: darkkhaki;
+}
+
+.grid-container-200 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  column-gap: 10px;
+  row-gap: 5px;
+  border: 4px solid darkolivegreen;
+  margin-block: 20px;
+}
+
+.grid-element-200 {
+  background-color: darkcyan;
+  color: whitesmoke;
+  font-weight: 700;
+  padding: 5%;
+  border: 2px dotted cyan;
+  border-radius: 10px;
+}
+
+.css15-content {
+  display: grid;
+  grid-template-areas: 
+    "navigation navigation"
+    "filtres calendar"
+    "filtres auditoriums"
+  ;
+  grid-template-columns: 1fr 4fr;
+}
+
+.css15-content h3 {
+  text-align: center;
+  margin: 0px;
+}
+
+.css15-navigation {
+  grid-area: navigation;
+  display: flex;
+  background-color: lightcyan;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  padding: 10px;
+}
+
+.css15-navigation div {
+  color: black;
+  font-weight: 700;
+}
+
+.css15-filtres {
+  padding-block: 30px;
+  padding-inline: 10px;
+  grid-area: filtres;
+  background-color: lightgrey;
+}
+
+.css15-calendar {
+  padding-block: 30px;
+  padding-inline: 10px;
+  grid-area: calendar;
+  background-color: lightskyblue;
+}
+
+.css15-auditoriums {
+  padding-block: 30px;
+  padding-inline: 10px;
+  grid-area: auditoriums;
+  background-color: lightblue;
+}
+
+.css15-auditoriums-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  column-gap: 10px;
+}
+
+.css15-auditorium-box {
+  padding: 10px;
+  border: 3px dashed darkcyan;
+  min-width: 200px;
+  display: grid;
+  grid-column: auto;
+}
+
+.css15-auditorium-box h4 {
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.css15-auditorium-button {
+  color: white;
+  background-color: var(--color-mai);
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.css15-auditorium-button-disabled {
+  color: white;
+  background-color: #636767;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.css15-auditorium-description {
+  font-style: italic;
+}
+
+
+/************************************************************************************/
+/* 16. CSS переполнение overflow, видимость opacity и visibility, обрезка clip-path */
+/************************************************************************************/
+
+.css16-visibility h3 {
+  text-align: center;
+}
+
+.css16-visibility-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  border: 5px dotted darkgrey;
+  padding: 20px;
+}
+
+.css16-visibility-box {
+  padding: 20px;
+  border-color: gold;
+  border-width: 3px;
+  border-style: dashed;
+  border-radius: 10px;
+  background-color: lightgoldenrodyellow;
+  display: grid;
+  grid-column: auto;
+  row-gap: 20px;
+}
+
+.css16-button1 {
+  visibility: visible;
+}
+
+.css16-button2 {
+  visibility: hidden;
+}
+
+.css16-overflow-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 5px dotted darkgrey;
+  padding: 20px 20px 100px 20px;
+}
+
+.css16-overflow-box {
+  background-color: lightseagreen;
+  border: 3px dashed seagreen;
+  display: grid;
+  grid-column: auto;
+  row-gap: 20px;
+  padding: 20px;
+  margin: 5px;
+}
+
+.css16-overflow-box p {
+  color: white;
+  margin: 0px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.css16-overflow-box div {
+  border: 2px solid lightcoral;
+  padding: 20px;
+  background-color: lightcyan;
+  height: 100px;
+}
+
+.css16-overflow-box .css16-visible {
+  overflow: visible;
+}
+
+.css16-overflow-box .css16-auto {
+  overflow: auto;
+}
+
+.css16-overflow-box .css16-scroll {
+  overflow: scroll;
+}
+
+.css16-overflow-box .css16-hidden {
+  overflow: hidden;
+}
+
+.css16-overflow-box .css16-clip {
+  overflow: clip;
+}
+
+.css16-opacity-container {
+  display: flex;
+  justify-content: center;
+  border: 5px dotted darkgrey;
+  padding: 40px;
+  column-gap: 20px;
+}
+
+.css16-opacity-box-border {
+  border: 3px dashed darkorange;
+}
+
+.css16-opacity-box {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.css16-opacity-box.opacity-1 {
+  opacity: 1;
+}
+
+.css16-opacity-box.opacity-075 {
+  opacity: 0.75;
+}
+
+.css16-opacity-box.opacity-025 {
+  opacity: 0.25;
+}
+
+.css16-opacity-box.opacity-0 {
+  opacity: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.css17-container {
+  display: flex;
+  border: 5px double darkorchid;
+  justify-content: space-between;
+  column-gap: 10px;
+  padding: 20px;
+  margin-bottom: 300px;
+  background-color: lightgray
+}
+
+.css17-container div {
+  background-color: orchid;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 20px;
+  width: 20%;
+}
+
+.css17-container textarea {
+  background-color: orchid;
+  width: 20%;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+  padding: 20px;
+}
+
+.css17-resize-both {
+  resize: both;
+  overflow: auto;
+}
+
+.css17-resize-vertical {
+  resize: vertical;
+}
+
+.viktor-box {
+  background-color: yellow;
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  padding: 0.25em;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/******************************************************************************************************/
+/* 18. CSS переходы состояний transition, трансформации transform. Свойства translate, scale и rotate */
+/******************************************************************************************************/
+
+.css18-box1-border {
+  width: 20vw;
+  border: 2px solid black;
+  margin: 20px 0px 100px 20px;
+}
+
+.css18-box1 {
+  padding: 20px;
+  background-color: blanchedalmond;
+  transform: translate(30px, 5%); /* аналогично translateX(30px) translateY(5%) */
+  transition-duration: 1s;
+}
+
+.css18-box2 {
+  width: 30vw;
+  background-color: lightcoral;
+  padding: 20px;
+  margin-left: 30px;
+  margin-top: 200px;
+  transform: scaleX(1.25) scaleY(1.75);
+  rotate: 358deg;
+  transition: all 0.5s ease-in 0.5s;
+}
+
+.css18-box3 {
+  width: 10vw;
+  background-color: lightseagreen;
+  transform: scale(-1, -1) rotate(45deg);
+  padding: 40px;
+  margin: 250px;
+  transition-duration: 5s;
+}
+
+.css18-box4 {
+  width: 15vw;
+  background-color: lightgreen;
+  padding: 5px;
+  margin-left: 100px;
+  transform: skew(325deg, 10deg);
+  transition: all 0s ease-out 2s;
+}
+
+.css18-box1:hover {
+  transform: translate(0px, 0%)
+}
+
+.css18-box2:hover {
+  transform: scale(1, 1);
+}
+
+.css18-box3:hover {
+  font-size: 8px;
+  background-color: black;
+  color: white;
+}
+
+.css18-box4:hover {
+  transform: skew(0deg);
+}
+
+
+/**********************************************************************************/
+/* 19. Анимации в CSS. Правило @keyframes. Свойство animation. Настройка анимаций */
+/**********************************************************************************/
+
+.css19-header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.css19-downloading-border {
+  margin: 20px;
+  border: 5px solid #000000;
+}
+
+@keyframes css19-downloading {
+  100% {
+    width: 100%;
+  }
+}
+
+.css19-downloading-element {
+  animation-name: css19-downloading;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: var(--color-mai);
+  height: 100px;
+  width: 0px;
+}
+
+@keyframes css19-crazy {
+  20% {
+    transform: skew(20deg) rotate(45deg);
+    background-color: black;
+  }
+
+  40% {
+    transform: skew(26deg, 13deg) rotate(0deg) scale(1.5);
+    background-color: darkolivegreen;
+    border-radius: 10px;
+  }
+
+  60% {
+    transform: skewY(deg) rotate(138deg) scaleY(2.4);
+    background-color: lightseagreen;
+    border-radius: 30px;
+  }
+
+  80%, 100% {
+    transform: skew(0deg) rotate(0deg) scale(1);
+    background-color: var(--color-mai);
+    border-radius: 0px;
+  }
+}
+
+.css19-crazy-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.css19-crazy {
+  animation-name: css19-crazy;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: var(--color-mai);
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+}
+
+
+/*********************************************************************/
+/* Рубрика "Эксперименты" для теста в уроке 18 курса от VK Education */
+/*********************************************************************/
+
+.extra-section h2 {
+  text-align: center;
+}
+
+.extra-section a {
+  text-decoration-line: none;
+  color: orange;
+  font-style: italic;
+}
+
+.extra-section > div > div {
+  margin: 20px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: var(--color-mai);
+  color: white;
+}
+
+.es-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 20px;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+/* Для практики, не принимайте близко */
+[class="esd1"] {
+  scale: 1;
+}
+
+[class="esd2"] {
+  scale: 1 -1;
+}
+
+[class="esd3"] {
+  scale: -1 1;
+}
+
+[class="esd4"] {
+  scale: -1;
+}

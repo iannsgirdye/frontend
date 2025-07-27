@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title lang="en">Hello, World!</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 lang="en">Hello, World!</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Описание проекта</h2>
+        <p lang="en">This is my first <b>HTML</b> page!</p>
+        <p>
+          Повторение материала видеокурса по HTML на YouTube-канале
+          <a href="https://www.youtube.com/@AleksanderLamkov" target="_blank" lang="en">Friendly Frontend</a>
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=ny-ouhU-cCc" target="_blank">
+          4. HTML заголовки, параграфы и списки — теги h1-h6, p, ol, ul и li
+        </a></h2>
+        <div>
+          <p>Это параграф, а ниже — упорядоченный список (<code>ordered list</code>)</p>
+          <ol>
+            <li class="first-list-item">Первый пункт</li>
+            <li>Второй пункт</li>
+            <li>Третий пункт</li>
+            <li>Четвёртый пункт</li>
+          </ol>
+        </div>
+        <div>
+          <p>Это снова параграф, а ниже расположен маркированный список (<code>unordered list</code>)</p>
+          <ul>
+            <li>Живи, кайфуй, гуляй, играй.</li>
+            <li>Упал — вставай, наглей, ругай.</li>
+            <li>Чужих роняй, своих спасай.</li>
+            <li>Пельмени, суп, картошка, чай.</li>
+          </ul>
+        </div>
+        <p><em>Примечание. Заголовки разного уровня в этой секции не проставляю, так как это делается на всей странице</em></p>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=I3e5TaoV1TI" target="_blank">
+          5. Форматирование текста в HTML — теги b, strong, i и em, s, u, sub и sup, small, mark, br, hr, code
+        </a></h2>
+        <p>
+          Я начинаю сочинять этот paragraph. So, следующий текст выделен <b>жирным</b>, 
+          а этот — <strong>не просто выделен, но и подчеркивает свою важность</strong> (например, в screen reader). <br />
+          Теперь повторим то же самое для <i>курсива</i>, 
+          тогда следующий текст также <em>выделяется в вспомогательных программах</em>. <br />
+          Можем почиркать: <s>зачеркнули</s> и <u>подчеркнули</u>. Идём дальше. <br />
+          Любимая математика: (a<sub>1</sub> + a<sub>2</sub>)<sup>2</sup> =
+          a<sub>1</sub><sup>2</sup> + 2a<sub>1</sub>a<sub>2</sub>+a<sub>2</sub><sup>2</sup>. 
+          Здесь были применены надстрочный и подстрочный тексты. <br />
+          Это, конечно, круто. А если немного <small>уменьшить текст</small> или <mark>выделить маркером</mark>?
+          Получилось прикольно. Теперь напишем небольшую программу на <code>Python</code>:
+        </p>
+        <div>
+          <pre>
+            <code>
+a = 2
+b = 3
+c = 4
+print(a + b + c)  # 9
+            </code>
+          </pre>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=scB2C0uNV1s" target="_blank">
+          6. HTML ссылки и кнопки — теги a, button. Якорная ссылка, ссылка mailto и tel. Атрибут target _blank
+        </a></h2>
+        <div>
+          <p><b>Якорное меню</b></p>
+          <ul>
+            <li><a href="#holl">Коридор</a></li>
+            <li><a href="#bathroom">Санузел</a></li>
+            <li><a href="#wardrobe">Гардероб</a></li>
+            <li><a href="#bedroom">Спальня</a></li>
+            <li><a href="#kitchen">Кухня</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 id="holl">Коридор</h3>
+          <p lang="en">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div>
+          <h3 id="bathroom">Санузел</h3>
+          <p lang="en">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <button type="button">Просто нажми на меня, я ничего не делаю</button>
+        </div>
+        <div>
+          <h3 id="wardrobe">Гардероб</h3>
+          <p lang="en">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <button type="button"><b><i><s><u>А тут я переборщила с форматированием</u></s></i></b></button>
+        </div>
+        <div>
+          <h3 id="bedroom">Спальня</h3>
+          <p lang="en">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p><b>Заказать кровать:</b> <a href="mailto:bedroom@frontend.ru">bedroom@frontend.ru</a></p>
+        </div>
+        <div>
+          <h3 id="kitchen">Кухня</h3>
+          <p lang="en">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p><b>Заказать кухню:</b> <a href="tel:88005553535">8 (800) 555-35-35</a></p>
+        </div>
+        <p><em>
+          Примечание 1.
+          <a href="https://ru.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Подробно про Lorem_ipsum</a>
+        </em></p>
+        <p><em>Примечание 2. <code>target="_blank"</code> использован, например, в подвале</em></p>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=uCXwmupsoMY" target="_blank">
+          7. HTML изображения — тег img. Относительные и абсолютные пути
+        </a></h2>
+        <img 
+          src="./content/MAI95_logo_blue.png"
+          alt="Синий логотип МАИ к 95-летию"
+          title="Синий логотип МАИ к 95-летию"
+          width="600" height="200"
+          loading="lazy"
+        />
+        <p><em>Примечание. Попробуй навести курсор мыши на изображение :)</em></p>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=nw4ILgX_mLo" target="_blank">
+          8. Цитаты в HTML — теги blockquote, cite. Атрибут cite. Источник цитаты в HTML
+        </a></h2>
+        <div>
+          <h3>Блочная цитата, указание источника через тег <code>cite</code></h3>
+          <blockquote lang="en">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Nisi fugiat excepturi labore dolorem laudantium mollitia aperiam? 
+              Id molestiae reiciendis ducimus? Repudiandae nostrum eum quos iusto sit eius cumque, hic natus.
+            </p>
+          </blockquote>
+          <cite>Emmet Abbreviation</cite>
+        </div>
+        <div>
+          <h3>Блочная цитата, указание источника через атрибут <code>cite</code></h3>
+          <blockquote cite="/" lang="en">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Error quas omnis illum eaque voluptate ipsum, 
+              totam asperiores recusandae repellendus incidunt nam cumque obcaecati? 
+              Repellat tempore voluptate repellendus quis nulla hic?
+            </p>
+          </blockquote>
+        </div>
+        <div>
+          <h3>Строчная цитата, указание источника через атрибут <code>cite</code></h3>
+          <p>
+            Любимая классика:
+            <q cite="/" lang="en">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+              Porro illo nam, sunt commodi veritatis ab libero perspiciatis et non maxime minus similique recusandae! 
+              Aut obcaecati eligendi omnis praesentium officiis reprehenderit?
+            </q>
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=6PL2TqBdz0I" target="_blank">
+          9. Медиаконтент в HTML — видео, аудио, фреймы. Теги video, audio, iframe. Тег source
+        </a></h2>
+        <div>
+          <h3>Видео без контроллеров, атрибут <code>src</code></h3>
+          <video 
+            src="./content/casino.mp4"
+            width="852" height="478"
+          ></video>
+        </div>
+        <div>
+          <h3>Видео с контроллерами, атрибут <code>src</code></h3>
+          <video
+            src="./content/casino.mp4"
+            width="852" height="478"
+            controls
+          ></video>
+        </div>
+        <div>
+          <h3>
+            Видео с контроллерами, 
+            вложенный тег <code>source</code>, 
+            автопроигрывание без звука,
+            зацикливание воспроизведения
+          </h3>
+          <video 
+            width="852" height="478"
+            controls
+            autoplay muted
+            loop
+          >
+            <source src="./content/casino.mp4" type="video/mp4"/>
+            <p>Формат mp4 не поддерживается вашим браузером</p>
+          </video>
+        </div>
+        <div>
+          <h3>Аудио с контроллерами и зацикливанием воспроизведения</h3>
+          <audio
+            src="./content/smeshariki.mp3"
+            controls
+            loop
+          ></audio>
+        </div>
+        <div>
+          <h3>Виджет видео с YouTube-канала Александра Ламкова</h3>
+          <iframe 
+            width="560" height="315" 
+            src="https://www.youtube.com/embed/6PL2TqBdz0I?si=o5WS7j_kf-C1qWpL" 
+            title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div>
+          <h3>Виджет сайта МАИ</h3>
+          <iframe
+            width="1000" height="500"
+            src="https://mai.ru"
+          ></iframe>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=jWXGLAD2BUU" target="_blank">
+          10. HTML таблицы — теги table, tr, td и th. Структурные табличные теги thead, tbody, tfoot и caption
+        </a></h2>
+        <table>
+          <caption>Экзамен по ЛАиАГ для первого курса ФИИТа</caption>
+          <thead>
+            <tr>
+              <th>Номер группы</th>
+              <th>Фамилия преподавателя</th>
+              <th>Дата и время экзамена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>М80-110БВ-24</td>
+              <td rowspan="2">Руденко</td>
+              <td>01.06.2025 09:00</td>
+            </tr>
+            <tr>
+              <td>М80-111БВ-24</td>
+              <td>01.06.2025 13:00</td>
+            </tr>
+            <tr>
+              <td>М80-112БВ-24</td>
+              <td rowspan="4">Пегачкова</td>
+              <td>02.05.2025 18:00</td>
+            </tr>
+            <tr>
+              <td>М80-113БВ-24</td>
+              <td rowspan="3">02.06.2025 12:15</td>
+            </tr>
+            <tr>
+              <td>М80-114БВ-24</td>
+            </tr>
+            <tr>
+              <td>М80-116БВ-24</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Итог: готовтесь, товарищи!</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=_in4LAdxAUA" target="_blank">
+          11. HTML формы. Теги form, fieldset, legend, label и поле ввода input
+        </a></h2>
+        <form>
+          <fieldset>
+            <legend>Первая форма</legend>
+            <label for="1.1">Первое поле ввода</label>
+            <input id="1.1" />
+          </fieldset> 
+          <fieldset>
+            <legend>Вторая форма</legend>
+            <label for="2.1">Первое поле ввода</label>
+            <input id="2.1" />
+            <label for="2.2">Второе поле ввода</label>
+            <input id="2.2" />
+          </fieldset>
+          <fieldset>
+            <legend>Третья форма</legend>
+            <div>
+              <label for="3.1">Первое поле ввода</label>
+              <input id="3.1" />
+            </div>
+            <div>
+              <label for="3.2">Второе поле ввода</label>
+              <input id="3.2" value="Как дела?" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=ScPhhvz1z5Q" target="_blank">
+          12. HTML тег input и его вариации. Атрибут type, значения tel, email, password, url, search и другие
+        </a></h2>
+        <form>
+          <fieldset>
+            <legend><b>Поиск</b></legend>
+            <label for="search">Запрос:</label>
+            <input id="search" name="search" type="search"/>
+            <button type="submit">Найти</button>
+          </fieldset>
+        </form>
+        <p></p> <!-- для отступа -->
+        <form>
+          <fieldset>
+            <legend><b>Заполнение профиля</b></legend>
+            <p>
+              <label for="email">Электронная почта:</label>
+              <input id="email" name="email" type="email"/>
+            </p>
+            <p>
+              <label for="tel">Номер телефона:</label>
+              <input id="tel" name="tel" type="tel" />
+            </p>
+            <p>
+              <label for="url">Ссылка на профиль:</label>
+              <input id="url" name="url" type="url" />
+            </p>
+            <p>
+              <label for="age">Возраст:</label>
+              <input id="age" name="age" type="number" />
+            </p>
+            <p>
+              <button type="button">Просто потыкать на кнопку</button>
+              <button type="submit">Отправить данные</button>
+              <button type="reset">Сбросить данные</button>
+            </p>
+          </fieldset>
+        </form>
+        <p></p>
+        <form>
+          <fieldset>
+            <legend><b>Изменение пароля</b></legend>
+            <p>
+              <label for="current-password">Текущий пароль:</label>
+              <input id="current-password" name="current-password" type="password" />
+            </p>
+            <p>
+              <label for="new-password">Новый пароль:</label>
+              <input id="new-password" name="new-password" type="password" />
+            </p>
+            <p>
+              <label for="confirm-password">Повтор нового пароля:</label>
+              <input id="confirm-password" name="confirm-password" type="password" />
+            </p>
+            <p>
+              <button type="submit">Изменить</button>
+            </p>
+          </fieldset>
+        </form>
+        <p></p>
+        <form>
+          <fieldset>
+            <legend><b>Установка даты и времени</b></legend>
+            <p>
+              <label for="date">Дата:</label>
+              <input id="date" name="date" type="date" />
+            </p>
+            <p>
+              <label for="datetime-local">Местные дата и время:</label>
+              <input id="datetime-local" name="datetime-local" type="datetime-local" />
+            </p>
+            <p>
+              <label for="month">Месяц:</label>
+              <input id="month" name="month" type="month" />
+            </p>
+            <p>
+              <label for="week">Неделя:</label>
+              <input id="week" name="week" type="week" />
+            </p>
+            <p>
+              <label for="time">Время:</label>
+              <input id="time" name="time" type="time" />
+            </p>
+            <p>
+              <button type="submit">Сохранить</button>
+            </p>
+          </fieldset>
+        </form>
+        <p></p>
+        <form>
+          <fieldset>
+            <legend><b>Опрос</b></legend>
+            <p>
+              <label for="color">Любимый цвет:</label>
+              <input id="color" name="color" type="color" />
+            </p>
+            <p>
+              <label for="one-file">Любимый мем:</label>
+              <input id="one-file" name="one-file" type="file" />
+            </p>
+            <p>
+              <label for="multiple-file">Любимые обои:</label>
+              <input id="multiple-file" name="multiple-file" type="file" multiple/>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend><b>Пол</b></legend>
+            <p>
+              <input id="nothing" name="sex" value="nothing" type="radio" checked />
+              <label for="nothing">Не указывать</label>
+              <input id="male" name="sex" value="male" type="radio" />
+              <label for="male">Мужской</label>
+              <input id="female" name="sex" value="female" type="radio" />
+              <label for="female">Женский</label>
+            </p>
+          </fieldset>
+          <p>
+            <button type="submit"><b>Отправить</b></button>
+            <button type="reset"><i>Сбросить</i></button>
+          </p>
+        </form>
+        <p></p>
+        <form>
+          <fieldset>
+            <legend><b>Просто потыкать и потаскать</b></legend>
+            <p>
+              <input id="first-checkbox" name="checkbox" value="first-checkbox" type="checkbox" />
+              <label for="first-checkbox">Первый чекбокс</label>
+              <input id="second-checkbox" name="checkbox" value="second-checkbox" type="checkbox" />
+              <label for="second-checkbox">Второй чекбокс</label>
+              <input id="third-checkbox" name="checkbox" value="third-checkbox" type="checkbox" />
+              <label for="third-checkbox">Третий чекбокс</label>
+              <input id="fourth-checkbox" name="checkbox" value="fourth-checkbox" type="checkbox" checked />
+              <label for="fourth-checkbox">Четвёртый чекбокс</label>
+              <input id="fifth-checkbox" name="checkbox" value="fifth-checkbox" type="checkbox" />
+              <label for="fifth-checkbox">Пятый чекбокс</label>
+            </p>
+            <p>
+              <label for="range">Ползунок</label>
+              <input id="range" name="range" type="range" min="100" max="10000" />
+            </p>
+            <p><button type="submit">Отправить</button></p>
+          </fieldset>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://www.youtube.com/watch?v=FMjuLXNTPfU" target="_blank">
+          13. Формы в HTML. Теги textarea, select, option, optgroup
+        </a></h2>
+        <form>
+          <fieldset>
+            <p>
+              <label for="hello-world">Введите приветственное сообщение:<br /></label>
+              <textarea id="hello-world" name="hello-world">Hello, World!</textarea>
+            </p>
+            <p>
+              <label for="city">Выберите город:</label>
+              <select id="city" name="city" required>
+                <option value="" disabled selected>Не выбран</option>
+                <optgroup label="Центр">
+                  <option value="moscow">Москва</option>
+                  <option value="pskov">Псков</option>
+                  <option value="yaroslavl">Ярославль</option>
+                </optgroup>
+                <optgroup label="Сибирь">
+                  <option value="omsk">Омск</option>
+                  <option value="novosibirsk">Новосибирск</option>
+                </optgroup>
+              </select>
+            </p>
+            <p>
+              <button type="submit">Подтвердить</button>
+              <button type="reset">Сбросить</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://youtu.be/Lq4tky_6fN0?si=tKVTVvc_N7W6vqeF" target="_blank">
+          14. Формы в HTML. Атрибуты required, disabled, readonly, placeholder, inputmode, type и autocomplete
+        </a></h2>
+        <form>
+          <p>
+            <label for="14-required">Обязательное поле ввода</label>
+            <input id="14-required" name="14-required" type="text" required />
+          </p>
+          <p>
+            <label for="14-readonly">Поле ввода только для чтения с заполнителем</label>
+            <input id="14-readonly" name="14-readonly" type="text" placeholder="hello, world" readonly />
+          </p>
+          <p>
+            <label for="14-lenght">Поле ввода, в которое можно ввести от 5 до 20 (включительно) символов</label>
+            <input id="14-lenght" name="14-lenght" minlength="5" maxlength="20" />
+          </p>
+          <p>
+            <label for="14-pattern">Поле ввода, в которое можно ввести только латинские буквы</label>
+            <input id="14-pattern" name="14-pattern" type="text" pattern="[a-zA-Z]+" />
+          </p>
+          <p>
+            <button type="submit">Отправить</button>
+          </p>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://youtu.be/XTqd_x_rdjk?si=m4TbWWRWd40bNFGe">
+          16. HTML векторная графика, тег svg. Как выгрузить SVG изображение из Figma
+        </a></h2>
+        <div>
+          <p><b>Импорт изображения</b></p>
+          <img src="./content/avatar.svg" width="1080" height="1080" alt="Логотип mai_library">
+        </div>
+        <div>
+          <p><b>Код изображения</b></p>
+          <svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="1080" height="1080" fill="#0095DA"/>
+          <path d="M334.948 400.8H375.948L383.348 446.4V515H342.548V440.2L334.948 400.8ZM422.748 397.4C433.282 397.4 442.215 399.6 449.548 404C456.882 408.4 462.482 414.6 466.348 422.6C470.215 430.6 472.148 440.067 472.148 451V515H431.348V457C431.348 448.467 429.415 441.933 425.548 437.4C421.682 432.867 416.082 430.6 408.748 430.6C403.548 430.6 399.015 431.8 395.148 434.2C391.415 436.6 388.482 440 386.348 444.4C384.348 448.8 383.348 454 383.348 460L370.748 453.4C372.348 441.267 375.615 431.067 380.548 422.8C385.482 414.4 391.548 408.067 398.748 403.8C406.082 399.533 414.082 397.4 422.748 397.4ZM511.348 397.4C521.882 397.4 530.815 399.6 538.148 404C545.615 408.4 551.282 414.6 555.148 422.6C559.015 430.6 560.948 440.067 560.948 451V515H520.148V457C520.148 448.467 518.215 441.933 514.348 437.4C510.482 432.867 504.882 430.6 497.548 430.6C492.348 430.6 487.815 431.8 483.948 434.2C480.215 436.6 477.282 440 475.148 444.4C473.148 448.8 472.148 454 472.148 460L459.548 453.4C461.148 441.267 464.348 431.067 469.148 422.8C474.082 414.4 480.215 408.067 487.548 403.8C494.882 399.533 502.815 397.4 511.348 397.4ZM685.15 515L679.95 473.8L685.35 458L679.95 442.2L685.15 400.8H727.55L720.35 457.8L727.55 515H685.15ZM694.75 458C692.883 470 689.15 480.533 683.55 489.6C678.083 498.667 671.083 505.733 662.55 510.8C654.15 515.733 644.55 518.2 633.75 518.2C622.55 518.2 612.683 515.733 604.15 510.8C595.75 505.733 589.15 498.667 584.35 489.6C579.55 480.4 577.15 469.867 577.15 458C577.15 445.867 579.55 435.267 584.35 426.2C589.15 417.133 595.75 410.067 604.15 405C612.683 399.933 622.55 397.4 633.75 397.4C644.55 397.4 654.15 399.933 662.55 405C671.083 409.933 678.15 416.933 683.75 426C689.35 434.933 693.017 445.6 694.75 458ZM618.55 458C618.55 463.6 619.683 468.6 621.95 473C624.35 477.4 627.617 480.867 631.75 483.4C635.883 485.8 640.617 487 645.95 487C651.55 487 656.817 485.8 661.75 483.4C666.683 480.867 671.017 477.4 674.75 473C678.483 468.6 681.283 463.6 683.15 458C681.283 452.267 678.483 447.2 674.75 442.8C671.017 438.4 666.683 434.933 661.75 432.4C656.817 429.867 651.55 428.6 645.95 428.6C640.617 428.6 635.883 429.867 631.75 432.4C627.617 434.933 624.35 438.4 621.95 442.8C619.683 447.2 618.55 452.267 618.55 458ZM747.184 399L767.784 403L788.184 399V515H747.184V399ZM767.584 389.6C760.518 389.6 754.784 387.867 750.384 384.4C745.984 380.8 743.784 375.933 743.784 369.8C743.784 363.8 745.984 359 750.384 355.4C754.784 351.8 760.518 350 767.584 350C774.918 350 780.718 351.8 784.984 355.4C789.384 359 791.584 363.8 791.584 369.8C791.584 375.933 789.384 380.8 784.984 384.4C780.718 387.867 774.918 389.6 767.584 389.6ZM136.638 561H177.638V715H136.638V561ZM200.114 599L220.714 603L241.114 599V715H200.114V599ZM220.514 589.6C213.447 589.6 207.714 587.867 203.314 584.4C198.914 580.8 196.714 575.933 196.714 569.8C196.714 563.8 198.914 559 203.314 555.4C207.714 551.8 213.447 550 220.514 550C227.847 550 233.647 551.8 237.914 555.4C242.314 559 244.514 563.8 244.514 569.8C244.514 575.933 242.314 580.8 237.914 584.4C233.647 587.867 227.847 589.6 220.514 589.6ZM263.591 561H304.591V634L299.191 644.4V673.2L304.591 683.2V715H263.591V561ZM291.391 658C293.257 645.6 296.924 634.933 302.391 626C307.857 616.933 314.857 609.933 323.391 605C332.057 599.933 341.724 597.4 352.391 597.4C363.591 597.4 373.391 599.933 381.791 605C390.324 610.067 396.924 617.133 401.591 626.2C406.391 635.267 408.791 645.867 408.791 658C408.791 669.867 406.391 680.4 401.591 689.6C396.924 698.667 390.324 705.733 381.791 710.8C373.391 715.733 363.591 718.2 352.391 718.2C341.591 718.2 331.924 715.733 323.391 710.8C314.857 705.733 307.857 698.667 302.391 689.6C296.924 680.533 293.257 670 291.391 658ZM367.591 658C367.591 652.267 366.391 647.2 363.991 642.8C361.724 638.4 358.524 634.933 354.391 632.4C350.257 629.867 345.457 628.6 339.991 628.6C334.524 628.6 329.324 629.867 324.391 632.4C319.457 634.933 315.124 638.4 311.391 642.8C307.657 647.2 304.791 652.267 302.791 658C304.791 663.6 307.657 668.6 311.391 673C315.124 677.4 319.457 680.867 324.391 683.4C329.324 685.8 334.524 687 339.991 687C345.457 687 350.257 685.8 354.391 683.4C358.524 680.867 361.724 677.4 363.991 673C366.391 668.6 367.591 663.6 367.591 658ZM420.495 600.8H462.095L468.895 641.6V715H428.095V639.2L420.495 600.8ZM522.495 599V633.8C518.495 633 514.695 632.467 511.095 632.2C507.629 631.8 504.429 631.6 501.495 631.6C495.629 631.6 490.229 632.8 485.295 635.2C480.362 637.467 476.362 641.267 473.295 646.6C470.362 651.933 468.895 659.067 468.895 668L461.095 658.4C462.162 650.133 463.762 642.4 465.895 635.2C468.029 627.867 470.895 621.4 474.495 615.8C478.229 610.067 482.829 605.6 488.295 602.4C493.762 599.067 500.429 597.4 508.295 597.4C510.562 597.4 512.895 597.533 515.295 597.8C517.695 598.067 520.095 598.467 522.495 599ZM636.713 715L631.513 673.8L636.913 658L631.513 642.2L636.713 600.8H679.113L671.913 657.8L679.113 715H636.713ZM646.313 658C644.446 670 640.713 680.533 635.113 689.6C629.646 698.667 622.646 705.733 614.113 710.8C605.713 715.733 596.113 718.2 585.313 718.2C574.113 718.2 564.246 715.733 555.713 710.8C547.313 705.733 540.713 698.667 535.913 689.6C531.113 680.4 528.713 669.867 528.713 658C528.713 645.867 531.113 635.267 535.913 626.2C540.713 617.133 547.313 610.067 555.713 605C564.246 599.933 574.113 597.4 585.313 597.4C596.113 597.4 605.713 599.933 614.113 605C622.646 609.933 629.713 616.933 635.312 626C640.913 634.933 644.579 645.6 646.313 658ZM570.113 658C570.113 663.6 571.246 668.6 573.513 673C575.913 677.4 579.179 680.867 583.313 683.4C587.446 685.8 592.179 687 597.513 687C603.113 687 608.379 685.8 613.313 683.4C618.246 680.867 622.579 677.4 626.313 673C630.046 668.6 632.846 663.6 634.713 658C632.846 652.267 630.046 647.2 626.313 642.8C622.579 638.4 618.246 634.933 613.313 632.4C608.379 629.867 603.113 628.6 597.513 628.6C592.179 628.6 587.446 629.867 583.313 632.4C579.179 634.933 575.913 638.4 573.513 642.8C571.246 647.2 570.113 652.267 570.113 658ZM693.347 600.8H734.947L741.747 641.6V715H700.947V639.2L693.347 600.8ZM795.347 599V633.8C791.347 633 787.547 632.467 783.947 632.2C780.48 631.8 777.28 631.6 774.347 631.6C768.48 631.6 763.08 632.8 758.147 635.2C753.214 637.467 749.214 641.267 746.147 646.6C743.214 651.933 741.747 659.067 741.747 668L733.947 658.4C735.014 650.133 736.614 642.4 738.747 635.2C740.88 627.867 743.747 621.4 747.347 615.8C751.08 610.067 755.68 605.6 761.147 602.4C766.614 599.067 773.28 597.4 781.147 597.4C783.414 597.4 785.747 597.533 788.147 597.8C790.547 598.067 792.947 598.467 795.347 599ZM846.894 751.2C838.494 751.2 831.027 750.133 824.494 748C817.96 746 811.627 742.867 805.494 738.6V710.2C811.76 714.2 817.627 717.067 823.094 718.8C828.56 720.533 834.56 721.4 841.094 721.4C846.56 721.4 851.427 720.2 855.694 717.8C859.96 715.4 863.427 711 866.094 704.6L909.894 600.8H953.294L898.494 717.2C894.627 725.6 889.894 732.267 884.294 737.2C878.827 742.267 872.894 745.867 866.494 748C860.094 750.133 853.56 751.2 846.894 751.2ZM848.294 704.4L799.694 600.8H844.694L887.694 704.4H848.294Z" fill="white"/>
+          </svg>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://youtu.be/Br-v6hVuQxU?si=OQphCbviM-TquBPy">
+          17. Глобальные атрибуты HTML — class, id, title, hidden, tabindex, lang и др. Комментарии в разметке
+        </a></h2>
+        <fieldset>
+          <p contenteditable="true">Этот параграф можно редактировать, представляешь?</p>
+          <p contenteditable="true"><b>И</b> <i>этот</i>, <u>кстати</u>, <s>тоже</s></p>
+        </fieldset>
+        <p></p>
+        <fieldset>
+          <p>
+            <label for="17-spellcheck-true">В этом поле ввода работает проверка правописания:</label>
+            <input id="17-spellcheck-true" spellcheck="true" />
+          </p>
+          <p>
+            <label for="17-spellcheck-false">А в этом нет:</label>
+            <input id="17-spellcheck-false" spellcheck="false" />
+          </p>
+        </fieldset>
+      </section>
+      <hr />
+      <section>
+        <h2>
+          <a href="https://youtu.be/oQDNPNZ72Ig?si=TmNCHGb_YDwirUP7">
+            3. Блочная модель в CSS — свойства display, width, height, padding, margin, border и box-sizing
+          </a>
+          <br />
+          <a href="https://youtu.be/G-U-XU2KjD8?si=1d0HIcMlQeVzcq58"> 
+            4. CSS внутренние и внешние отступы — свойства padding и margin. Схлопывание отступов
+          </a>
+        </h2>
+        <div class="box-1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Explicabo laborum architecto, blanditiis debitis officia voluptate asperiores, 
+            autem fugiat molestiae doloremque nihil assumenda, 
+            nemo dolorum laudantium ex similique reprehenderit. Dolores, doloribus?
+          </p>
+        </div>
+        <div class="box-2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Explicabo laborum architecto, blanditiis debitis officia voluptate asperiores, 
+            autem fugiat molestiae doloremque nihil assumenda, 
+            nemo dolorum laudantium ex similique reprehenderit. Dolores, doloribus?
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <h2>
+          <a href="https://youtu.be/TJQi4H4ix0s?si=HbQk81UoSIgDnZx3">
+          7. Цвета в CSS. Форматы RGB, HEX, HSL. Свойство color, ключевые слова transparent, currentColor
+          </a>
+          <br />
+          <a href="https://youtu.be/bWoqW6PjqBE?si=HLTBBksu1A6XfNIu">
+            8. CSS фоновый цвет, изображение, градиент — свойство background, функция linear-gradient
+          </a>
+        </h2>
+        <div class="box-81">
+          <p class="color-red"><code>color: red;</code></p>
+        </div>
+        <p class="color-transparent"><code>color: transparent;</code></p>
+        <div class="box-82">
+          <p class="color-rgb-0-255-0"><code>color: rgb(0 255 0);</code></p>
+        </div>
+        <div class="box-83">
+          <p class="color-0095DA"><code>color: #0095DA</code></p>
+        </div>
+        <div class="color-currentColor">
+          <pre class="margin-padding-0">
+            <code>
+color: rgb(50 50 50); 
+border: 5px solid currentColor
+            </code>
+          </pre>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://youtu.be/Q2tVYJfW-aU?si=6dD9Oi2dzaPeNrAK">
+          9. CSS рамка border, обводка outline, тени box-shadow, фильтры filter
+        </a></h2>
+        <div class="box-91">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Architecto consequatur exercitationem nostrum iusto.
+            Esse eos temporibus nam dignissimos voluptatum impedit architecto ad!
+            Sint cum, molestiae sequi nostrum repellat quae ipsa!
+          </p>
+        </div>
+        <div class="box-92"></div>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://youtu.be/jQCzxM2dPWU?si=_p9BzS0SjTUnQQlq">
+          10. CSS позиционирование — свойства position, top, right, bottom, left, z-index. Контекст наложения
+        </a></h2>
+        <div class="box-10-1">
+          <p class="margin-padding-0">box-10-1</p>
+          <div class="box-10-2"><p class="margin-padding-0">box-10-2</p></div>
+        </div>
+        <div class="box-10-3"><p class="margin-padding-0">box-10-3</p></div>
+        <div class="box-10-4"><p class="margin-padding-0">box-10-4</p></div>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://youtu.be/HcuVlzsW9S8?si=7Be93WrmpxV1qF9k">
+          11. Единицы измерения в CSS — px, %, em, rem, vw, vh. Относительные и абсолютные величины
+        </a></h2>
+        <div class="box-11-px"><p>100px x 100px</p></div>
+        <div class="box-11-persent-parent">
+          <p>70% width of this section</p>
+          <div class="box-11-persent-child"><p>50% width of this yellogreen box</p></div>
+        </div>
+        <div class="box-11-em-parent">
+          <p>10 em of width</p>
+          <div class="box-11-em-child-1">
+            <p>5 em of parent width</p>
+            <div class="box-11-em-child-2"><p>12345</p></div>
+          </div>
+        </div>
+        <div class="box-11-viewport"><p class="margin-padding-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          In maxime quae quisquam tempore molestiae rerum quo laudantium, 
+          ratione unde, dicta deserunt, animi labore nihil quaerat eos illo amet eius saepe.
+        </p></div>
+      </section>
+      <hr />
+      <!-- Пасхалка в виде комментария -->
+      <section>
+        <h2><a href="https://youtu.be/YG8Vhz1pAsU?si=W6fZz0w9z0H4Pz0i">
+          12. CSS Flexbox Layout. Флексы в CSS. Гайд по флексбокс
+        </a></h2>
+        <span class="test-box-1">Test Box 1</span>
+        <div class="flex-container-18-1">
+          <div class="flex-element-18-1"><p class="margin-padding-0">First flex element</p></div>
+          <div class="flex-element-18-1"><p class="margin-padding-0">Second flex element</p></div>
+        </div>
+        <div class="flex-container-18-2">
+          <div class="flex-element-18-2">Пукпукпук</div>
+          <div class="flex-element-18-2"><i>пупупупупу</i></div>
+          <div class="flex-element-18-1"><code>imposter</code></div>
+        </div>
+        <div class="flex-container-18-3 justify-content-start">
+          <div class="flex-element-18-3">1-й</div>
+          <div class="flex-element-18-3">2-й</div>
+          <div class="flex-element-18-3">3-й</div>
+          <div class="flex-element-18-3">4-й</div>
+          <div class="flex-element-18-3">5-й</div>
+          <div class="flex-element-18-3">6-й</div>
+          <div class="flex-element-18-3">7-й</div>
+        </div>
+        <div class="flex-container-18-3 justify-content-end align-items-start height-300px">
+          <div class="flex-element-18-3">1-й</div>
+          <div class="flex-element-18-3">2-й</div>
+          <div class="flex-element-18-3">3-й</div>
+          <div class="flex-element-18-3">4-й</div>
+          <div class="flex-element-18-3">5-й</div>
+          <div class="flex-element-18-3">6-й</div>
+          <div class="flex-element-18-3">7-й</div>
+        </div>
+        <div class="flex-container-18-3 justify-content-center">
+          <div class="flex-element-18-3">1-й</div>
+          <div class="flex-element-18-3">2-й</div>
+          <div class="flex-element-18-3">3-й</div>
+          <div class="flex-element-18-3">4-й</div>
+          <div class="flex-element-18-3">5-й</div>
+          <div class="flex-element-18-3">6-й</div>
+          <div class="flex-element-18-3">7-й</div>
+        </div>
+        <div class="flex-container-18-3 justify-content-space-between height-300px">
+          <div class="flex-element-18-3">1-й</div>
+          <div class="flex-element-18-3">2-й</div>
+          <div class="flex-element-18-3">3-й</div>
+          <div class="flex-element-18-3">4-й</div>
+          <div class="flex-element-18-3">5-й</div>
+          <div class="flex-element-18-3">6-й</div>
+          <div class="flex-element-18-3">7-й</div>
+        </div>
+        <div class="flex-container-18-3 justify-content-space-around">
+          <div class="flex-element-18-3">1-й</div>
+          <div class="flex-element-18-3">2-й</div>
+          <div class="flex-element-18-3">3-й</div>
+          <div class="flex-element-18-3">4-й</div>
+          <div class="flex-element-18-3">5-й</div>
+          <div class="flex-element-18-3">6-й</div>
+          <div class="flex-element-18-3">7-й</div>
+        </div>
+        <div class="flex-container-18-3 justify-content-space-evenly align-content-space-evenly height-300px">
+          <div class="flex-element-18-3">1-й</div>
+          <div class="flex-element-18-3">2-й</div>
+          <div class="flex-element-18-3">3-й</div>
+          <div class="flex-element-18-3">4-й</div>
+          <div class="flex-element-18-3">5-й</div>
+          <div class="flex-element-18-3">6-й</div>
+          <div class="flex-element-18-3">7-й</div>
+          <div class="flex-element-18-3">8-й</div>
+          <div class="flex-element-18-3">9-й</div>
+          <div class="flex-element-18-3">10-й</div>
+          <div class="flex-element-18-3">11-й</div>
+          <div class="flex-element-18-3">12-й</div>
+          <div class="flex-element-18-3">13-й</div>
+          <div class="flex-element-18-3">14-й</div>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <h2><a href="https://youtu.be/cZa0aWzAj8E?si=3C4CPFYeQnD7yzy3">
+          14. CSS псевдоклассы — child, not. Состояния hover, focus и focus-visible, active, disabled, checked
+        </a></h2>
+        <article class="css14-container-buttons">
+          <button class="css14-button1" type="button">hover</button>
+          <button class="css14-button2" type="button">focus</button>
+          <button class="css14-button3" type="button">focus-visible</button>
+          <button class="css14-button4" type="button">active</button>
+        </article>
+        <article class="css14-container-inputs">
+          <input class="css14-input1" type="text" disabled placeholder="disabled"/>
+          <div>
+            <div>
+              <input id="css14-input21" name="css14-input2" class="css14-input2" type="radio" checked/>
+              <label for="css14-input21">Radio 1</label>
+            </div>
+            <div>
+              <input id="css14-input22" name="css14-input2" class="css14-input2" type="radio"/>
+              <label for="css14-input22">Radio 2</label>
+            </div>
+          </div>
+          <div>
+            <div>
+              <input id="css14-input31" class="css14-input3" name="css14-input3" type="checkbox"/>
+              <label for="css14-input31">Checkbox 1</label>
+            </div>
+            <div>
+              <input id="css14-input32" class="css14-input3" name="css14-input3" type="checkbox"/>
+              <label for="css14-input32">Checkbox 2</label>
+            </div>
+            <div>
+              <input id="css14-input33" class="css14-input3" name="css14-input3" type="checkbox"/>
+              <label for="css14-input33">Checkbox 3</label>
+            </div>
+          </div>
+        </article>
+      </section>
+      <hr/>
+      <section>
+        <h2><a href="https://youtu.be/JrKOHNRnRMg?si=NVzbLwe5ZuhhTZK6">
+          15. CSS Grid Layout. Грид-сетка. Гайд по гридам в CSS
+        </a></h2>
+        <div class="grid-container-100">
+          <div class="grid-element-100">1st grid element</div>
+          <div class="grid-element-100">2nd grid element</div>
+          <div class="grid-element-100">3rd grid element</div>
+          <div class="grid-element-100">4th grid element</div>
+          <div class="grid-element-100">5th grid element</div>
+          <div class="grid-element-100">6th grid element</div>
+          <div class="grid-element-100">7th grid element</div>
+          <div class="grid-element-100">8th grid element</div>
+          <div class="grid-element-100">9th grid element</div>
+          <div class="grid-element-100">10th grid element</div>
+          <div class="grid-element-100">11th grid element</div>
+          <div class="grid-element-100">12th grid element</div>
+        </div>
+        <div class="grid-container-200">
+          <div class="grid-element-200">11111</div>
+          <div class="grid-element-200">22222</div>
+          <div class="grid-element-200">33333</div>
+          <div class="grid-element-200">44444</div>
+          <div class="grid-element-200">55555</div>
+          <div class="grid-element-200">66666</div>
+          <div class="grid-element-200">77777</div>
+        </div>
+        <div class="css15-content" id="auditoriums">
+          <nav class="css15-navigation">
+            <div><a href="#auditoriums">Главная</a></div>
+            <div><a href="#auditoriums">Личный кабинет</a></div>
+          </nav>
+          <aside class="css15-filtres">
+            <h3>Фильтры</h3>
+          </aside>
+          <section class="css15-calendar">
+            <h3>Календарь</h3>
+          </section>
+          <section class="css15-auditoriums">
+            <h3>Аудитории</h3>
+            <article class="css15-auditoriums-content">
+              <div class="css15-auditorium-box">
+                <h4>it-1</h4>
+                <p class="css15-auditorium-description" title="Описание">Стильно, модно, молодёжно</p>
+                <button class="css15-auditorium-button" type="button" title="Забронировать">Забронировать</button>
+              </div>
+              <div class="css15-auditorium-box">
+                <h4>it-2</h4>
+                <p class="css15-auditorium-description" title="Описание">VR, V.L. Cond.</p>
+                <button class="css15-auditorium-button-disabled" type="button" title="Недоступно" disabled>Недоступно</button>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+      <hr/> <!-- <element/> vs <element /> -->
+      <section>
+        <h2><a href="https://youtu.be/p0Hb2RtISOU?si=J3HVqWlfTLenj1Zk">
+          16. CSS переполнение overflow, видимость opacity и visibility, обрезка clip-path
+        </a></h2>
+        <article class="css16-visibility">
+          <h3>Свойство <code>visibility</code></h3>
+          <div class="css16-visibility-container">
+            <p>Кнопки с <code>type="submit"</code></p>
+            <div class="css16-visibility-box">
+              <p><code>visible</code></p>
+              <button type="submit" class="css16-button1">Текст внутри кнопки</button>
+            </div>
+            <div class="css16-visibility-box">
+              <p><code>hidden</code></p>
+              <button type="submit" class="css16-button2">Текст внутри кнопки</button>
+            </div>
+          </div>
+        </article>
+        <article class="css16-overflow">
+          <h3>Свойство <code>overflow</code></h3>
+          <div class="css16-overflow-container">
+            <div class="css16-overflow-box">
+              <p><code>visible</code></p>
+              <div class="css16-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo dolorum praesentium perferendis obcaecati. Sed voluptate similique delectus perspiciatis veniam porro, rem ut impedit ipsa temporibus accusamus. Impedit, quaerat accusantium.</div>
+            </div>
+            <div class="css16-overflow-box">
+              <p><code>auto</code></p>
+              <div class="css16-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo dolorum praesentium perferendis obcaecati. Sed voluptate similique delectus perspiciatis veniam porro, rem ut impedit ipsa temporibus accusamus. Impedit, quaerat accusantium.</div>
+            </div>
+            <div class="css16-overflow-box">
+              <p><code>scroll</code></p>
+              <div class="css16-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo dolorum praesentium perferendis obcaecati. Sed voluptate similique delectus perspiciatis veniam porro, rem ut impedit ipsa temporibus accusamus. Impedit, quaerat accusantium.</div>
+            </div>
+            <div class="css16-overflow-box">
+              <p><code>hidden</code></p>
+              <div class="css16-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo dolorum praesentium perferendis obcaecati. Sed voluptate similique delectus perspiciatis veniam porro, rem ut impedit ipsa temporibus accusamus. Impedit, quaerat accusantium.</div>
+            </div>
+            <div class="css16-overflow-box">
+              <p><code>clip</code></p>
+              <div class="css16-clip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo dolorum praesentium perferendis obcaecati. Sed voluptate similique delectus perspiciatis veniam porro, rem ut impedit ipsa temporibus accusamus. Impedit, quaerat accusantium.</div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Свойство <code>opacity</code></h3>
+          <div class="css16-opacity-container">
+            <div class="css16-opacity-box-border">
+              <div class="css16-opacity-box opacity-1">
+                <code>1</code>
+              </div>
+            </div>
+            <div class="css16-opacity-box-border">
+              <div class="css16-opacity-box opacity-075">
+                <code>0.75</code>
+              </div>
+            </div>
+            <div class="css16-opacity-box-border">
+              <div class="css16-opacity-box opacity-025">
+                <code>0.25</code>
+              </div>
+            </div>
+            <div class="css16-opacity-box-border">
+              <div class="css16-opacity-box opacity-0">
+                <code>0</code>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <hr/>
+      <section>
+        <h2><a href="https://youtu.be/Ad8bfvZ50NY?si=JplTH9-fvTDody3G">
+          17. CSS свойства взаимодействия — cursor, user-select, pointer-events, scroll-behavior и resize
+        </a></h2>
+        <article>
+          <p style="user-select: auto">Этот текст можно выделить</p>
+          <p style="user-select: none">Этот текст нельзя выделить</p>
+        </article>
+        <article class="css17-container">
+          <div>
+            Это обычный блочный элемент, и его размеры нельзя изменять по умолчанию.
+          </div>
+          <textarea>
+            Это textarea, размеры который можно менять по обеим осям по умолчанию и текст в которой также можно изменять.
+          </textarea>
+          <div class="css17-resize-both">
+            А размеры этого обычного блочного элемента можно менять по обеим осям
+          </div>
+          <textarea class="css17-resize-vertical">
+            И, напоследок, размеры этой текстовой зоны можно менять только по вертикали.
+          </textarea>
+        </article>
+        <div class="viktor-box">2</div>
+      </section>
+      <hr/>
+      <section>
+        <h2><a href="https://youtu.be/aCN5h6Hj4uQ?si=AQaOJ5oAjWqP8Orb">
+          18. CSS переходы состояний transition, трансформации transform. Свойства translate, scale и rotate
+        </a></h2>
+        <div class="css18-box1-border">
+          <div class="css18-box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloremque pariatur dolorum iste? Tempore, non. Nostrum deserunt voluptas inventore, vel, voluptatibus quaerat sunt non deleniti optio, laudantium aliquam culpa aspernatur!
+          </div>
+        </div>
+        <div class="css18-box2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus vel voluptatem mollitia earum neque corporis porro saepe quasi, consectetur quo distinctio nemo reprehenderit ullam officia facilis, labore quod quae sapiente.
+        </div>
+        <div class="css18-box3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, amet ducimus? Commodi doloremque illum, tempore impedit, dolor earum laboriosam nisi autem neque repellat quas molestiae quisquam aliquid alias. Voluptas, assumenda.
+        </div>
+        <div class="css18-box4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur architecto nam eos mollitia rerum dolores, quod quis quisquam iure nesciunt vel pariatur illum doloribus eius aliquid magnam eaque sit.
+        </div>
+      </section>
+      <hr/>
+      <section>
+        <h2><a href="https://youtu.be/3a_iaHqazHo?si=TQodpKZRtUxrVeZa">
+          19. Анимации в CSS. Правило @keyframes. Свойство animation. Настройка анимаций
+        </a></h2>
+        <article>
+          <h3 class="css19-header">Анимация загрузки</h3>
+          <div class="css19-downloading-border">
+            <div class="css19-downloading-element"></div>
+          </div>
+        </article>
+        <article>
+          <h3 class="css19-header">Что-то странное</h3>
+          <div class="css19-crazy-parent">
+            <div class="css19-crazy"></div>
+          </div>
+        </article>
+      </section>
+      <hr/>
+      <section class="extra-section">
+        <h2>
+          Рубрика "Эксперименты" для теста в 
+          <a href="https://education.vk.company/curriculum/program/lesson/31543/">уроке 18</a>
+          курса от VK Education 
+        </h2>
+        <div class="es-container">
+          <div class="esd1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nobis dolor provident aliquid neque, pariatur possimus et magni magnam atque natus nihil libero expedita cumque, doloremque maxime ipsum unde cum?</div>
+          <div class="esd2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam molestias fuga repellat magnam voluptates vitae unde ducimus dignissimos deleniti? Consequuntur vitae at itaque totam! Velit illo explicabo necessitatibus quasi dolores?</div>
+          <div class="esd3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, minima a? Laborum necessitatibus, inventore fugit molestiae animi nam veniam officia ab nihil tenetur tempore beatae temporibus deleniti qui, saepe magni.</div>
+          <div class="esd4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt illum aliquid ullam maxime id quia saepe, repellendus aliquam, nulla repudiandae corporis ipsum! Quidem nam quibusdam iure esse maxime et voluptatum.</div>
+        </div>
+      </section>
+      <hr/>
+    </main>
+    <footer>
+      <p>© <a href="https://github.com/iannsgirdye" target="_blank" lang="en">iannsgirdye</a></p>
+    </footer>
+  </body>
+</html>
